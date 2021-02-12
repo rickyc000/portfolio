@@ -1,7 +1,26 @@
-h1 {
-  color: red;
+html, body {
+  background-color: #151210;
+  font-family: 'Cardo', serif;
 }
 
-.test {
-  color: green;
+main {
+  color: aliceblue;
+}
+
+a {
+  color: aliceblue;
+}
+
+.links {
+  display: flex;
+}
+
+a,
+.bio,
+h1 {
+  padding: 10px 5px;
+}
+
+h1 {
+  font-size: 50px;
 }
