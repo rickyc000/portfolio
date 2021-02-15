@@ -65,6 +65,11 @@ main {
   }
 }
 
+a {
+  text-decoration: none;
+  color: rgb(93, 90, 134);
+}
+
 .home {
   // background-color: #B686B8;
   // height: 0.4vw;
@@ -94,4 +99,9 @@ main {
 
 .contact-section {
   background-color: palegoldenrod;
+}
+
+.experience-section {
+  display: flex;
+  justify-content: center;
 }

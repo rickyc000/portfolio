@@ -23,21 +23,12 @@ function App() {
 
   return (
     <main data-scroll-container ref={scrollRef}>
-      <div className="nav-section" data-scroll-sticky data-scroll-target="#fixed-target" >
+      <div className="nav-section">
         <ul className="nav-bar">
           {navSections.map((section =>
-            // <Link
-            //   key={section}
-            //   activeClass="active"
-            //   className={section}
-            //   to={section}
-            //   spy={true}
-            //   smooth={true}
-            //   duration={1000} >
             <li key={section}>
-              <a href={`#${section}`} data-scroll-to> {section}</a>
+              <a href={`#${section}`} data-scroll-to>{section}</a>
             </li>
-            // </ Link>
           ))}
         </ul>
       </div>
@@ -45,38 +36,34 @@ function App() {
       <div>
         <div>
 
-          {/* <Element name="projects" className="projects"> */}
           <div
             data-scroll-section
             className="projects-section"
             id="projects"
           >
-            <div>
+            <div >
               Projects
             </div>
           </div>
-          {/* </Element> */}
-          {/* <Element name="experience" className="experience"> */}
+
           <div data-scroll-section className="experience-section" id="experience">
-            <div>
+            <div data-scroll data-scroll-direction="vertical" data-scroll-speed="-1" data-scroll-class="appear">
               Experience
             </div>
           </div>
-          {/* </Element> */}
-          {/* <Element name="events" className="events"> */}
+
           <div data-scroll-section className="events-section" id="events">
             <div>
               Events
             </div>
           </div>
-          {/* </Element> */}
-          {/* <Element name="contact" className="contact"> */}
+
           <div data-scroll-section className="contact-section" id="contact">
             <div>
               Contact
             </div>
           </div>
-          {/* </Element> */}
+
         </div>
       </div>
 
