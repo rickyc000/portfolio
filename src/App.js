@@ -2,6 +2,7 @@
 import locomotiveScroll from 'locomotive-scroll'
 import React, { useEffect } from 'react'
 // import { Link, Element } from 'react-scroll'
+import Projects from './components/Projects'
 
 import './styles/main.scss'
 import './styles/base.css'
@@ -38,28 +39,43 @@ function App() {
 
           <div
             data-scroll-section
-            className="projects-section"
-            id="projects"
+            className="about-section"
+            id="about"
           >
-            <div >
-              Projects
+            <div className="title-wrapper">
+              Ricky Cato
+            </div>
+            <div className="bio-wrapper">
+              Software Engineer
             </div>
           </div>
 
+          <div
+            data-scroll-section
+            className="projects-section"
+            id="projects"
+          >
+            <div className="heading">
+              Projects
+            </div>
+            <Projects />
+
+          </div>
+
           <div data-scroll-section className="experience-section" id="experience">
-            <div data-scroll data-scroll-direction="vertical" data-scroll-speed="-1" data-scroll-class="appear">
+            <div data-scroll data-scroll-direction="vertical" data-scroll-speed="-.5" data-scroll-class="appear" className="heading">
               Experience
             </div>
           </div>
 
           <div data-scroll-section className="events-section" id="events">
-            <div>
+            <div className="heading">
               Events
             </div>
           </div>
 
           <div data-scroll-section className="contact-section" id="contact">
-            <div>
+            <div className="heading">
               Contact
             </div>
           </div>

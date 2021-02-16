@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 html, body {
   margin: 0;
   padding: 0;
@@ -13,19 +12,6 @@ html, body {
 main {
   color: rgb(93, 90, 134);
 }
-
-// ul {
-//   list-style: none;
-// }
-
-// .App {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   height: 100%;
-//   width: 100%;
-//   // overflow: hidden;
-// }
 
 .nav-bar {
   // font-size: 3.5vw;
@@ -70,38 +56,91 @@ a {
   color: rgb(93, 90, 134);
 }
 
-.home {
-  // background-color: #B686B8;
-  // height: 0.4vw;
-  // width: 0.4vw;
+.home-button {
   margin-right: auto;
 }
 
 .projects-section,
 .experience-section,
 .events-section,
-.contact-section {
-  height: 100vh;
+.contact-section,
+.about-section {
+  // height: 100vh;
   font-size: 5vh;
+  display: flex;
+  // justify-content: center;
 }
 
 .projects-section {
+  // height: 130vh;
   background-color: lightblue;
+  flex-direction: column;
+  border: 1px dashed green;
+  height: 235vh;
+}
+
+.projects-content-wrapper {
+  border: 1px dotted darkcyan;
 }
 
 .experience-section {
+  height: 100vh;
   background-color: lightcoral;
 }
 
 .events-section {
+  height: 100vh;
   background-color: palegreen;
 }
 
 .contact-section {
+  height: 100vh;
   background-color: palegoldenrod;
 }
 
-.experience-section {
+
+.about-section {
+  background-color: plum;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  height: 100vh;
+}
+
+.title-wrapper {
+  font-size: 11vw;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-size: 8vw;
+  margin: 6vw;
+  width: 100vw;
+}
+
+
+.project-image-wrapper {
+  height: auto;
+  width: 45vw;
+}
+
+.project-title {
+  text-transform: uppercase;
+  font-size: 6vw;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  transition: 1s;
+}
+
+img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  transition: 0.7s;
 }
