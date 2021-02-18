@@ -1,3 +1,10 @@
+$colorA: #4b4e53;
+// $colorB: #fdf4e3;
+$colorB: #F2E450;
+$colorC: rgb(80, 134, 169);
+$colorD: #D3E3FA;
+$colorE: #50AAF3;
+
 * {
   box-sizing: border-box;
 }
@@ -5,23 +12,25 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #f1e1c1;
+  background-color: $colorB;
   font-family: 'Oranienbaum', serif;
+  
 }
 
 main {
-  color: rgb(93, 90, 134);
-  color: black;
+  // color: rgb(93, 90, 134);
+  // color: black;
+  color: $colorA;
 }
 
 .nav-bar {
   // font-size: 3.5vw;
   // width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  // height: 20vw;
   z-index: 1;
-  // border-bottom: 1px solid #B686B8;
-  // flex-direction: column;
+
   margin: 0;
   // background-color: white;
   position: absolute;
@@ -31,31 +40,34 @@ main {
 }
 
 .nav-bar li {
-  font-size: 3.5vw;
+  font-size: 30px;
   // font-size: 3rem;
   list-style: none;
   // border-bottom: 1px solid #405b7a;
-  text-transform: uppercase;
-  padding: 0.9vw .8vw 0.8vw 1.3vw;
+  text-transform: capitalize;
+  padding: 3px 15px 3px 3px;
+  // font-weight: normal;
   // letter-spacing: .5vw;
   // display:inline-block;
-  // transform:scale(1,1.8);
+  // transform:scale(1,1.6);
   // font-weight: 600;
   text-decoration: none;
+  font-family: 'Raleway', sans-serif;
   // padding: 10px 5px;
   // height: 100px;
 }
 
-@media only screen and (max-width: 920px) {
-  .nav-bar li {
-    font-size: 33px;
-  }
-}
+// @media only screen and (max-width: 920px) {
+//   .nav-bar li {
+//     font-size: 33px;
+//   }
+// }
 
 a {
   text-decoration: none;
   // color: rgb(93, 90, 134);
-  color: black;
+  // color: black;
+  color: $colorA;
 }
 
 .home-button {
@@ -68,44 +80,30 @@ a {
 .contact-section,
 .about-section {
   // height: 100vh;
-  font-size: 5vh;
+  // font-size: 5vh;
   display: flex;
   // margin: 10px 0;
   // justify-content: center;
 }
 
-.projects-section {
-  // height: 130vh;
-  // background-color: lightblue;
-  flex-direction: column;
-  border: 1px dashed green;
-  // height: 255vh;
-}
-
-.projects-content-wrapper {
-  border: 1px dotted darkcyan;
-}
-
-.project-wrapper {
-  display: flex;
-  flex-direction: column;
-  margin: 15px;
-}
-
-
-
 
 
 .events-section {
-  height: 100vh;
-  background-color: palegreen;
+  // height: 100vh;
+  // background-color: palegreen;
+  flex-direction: column;
 }
 
 .contact-section {
   height: 200vh;
-  background-color: palegoldenrod;
+  flex-direction: column;
+  // background-color: palegoldenrod;
 }
 
+
+
+
+//* TITLE PAGE
 
 .about-section {
   // background-color: plum;
@@ -113,50 +111,166 @@ a {
   justify-content: center;
   flex-direction: column;
   text-transform: uppercase;
-  height: 100vh;
-}
-
-.scroll-down-wrapper {
-  width: 100%;
-  margin: 3vw 17vw;
-  display: flex;
-  // align-self: flex-end;
-  // justify-content: center;
   // height: 80vh;
-  justify-self: flex-end;
 }
 
 .title-wrapper {
-  font-size: 11vw;
+  font-size: 100px;
+  height: 100px;
+  font-family: 'Cardo', serif;
+  font-weight: normal;
+  margin: 0;
+  // font-family: 'Raleway', sans-serif;
+  // letter-spacing: -.5vw;
+  // transform:scale(1,2);
+  // color: #fdf4e3;
+  // background-color: #4b4e53;
 }
+
+.bio-wrapper {
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: normal;
+  // transform:scale(1,1.6);
+  // color: #fdf4e3;
+  // font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  // margin-top: 10px;
+}
+
+.about-section {
+  // margin: 5vw;
+  height: 100vh;
+  flex-grow: 1;
+  // border: 1px dashed green;
+}
+
+.title-section {
+  flex-grow: 1;
+  height: 100%;
+  // border: 1px dotted red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+  
+}
+
+.scroll-down-wrapper {
+  // border: 1px dotted blue;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  // height: 100%;
+}
+
 
 .heading {
   text-transform: uppercase;
-  font-size: 8vw;
-  margin: 6vw;
+  // font-size: 8vw;
+  margin-bottom: 6vw;
+  margin-top: 1vh;
   width: 100vw;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+//* Project Section
+
+.projects-section {
+  // height: 130vh;
+  border-top: 3px solid $colorC;
+  background-color: $colorE;
+  flex-direction: column;
+  font-family: 'Cardo', serif;
+  // border: 1px dashed green;
+  // height: 255vh;
+  color: $colorA;
+  color: white;
+  // display: flex;
+  // justify-content: center;
+  // flex-direction: column;
+}
+
+.project-wrapper {
+  // background-color: #fff6e4;
+  display: flex;
+  // flex-direction: column;
+  // margin: 15px;
+  // width: 70%;
+}
+
+
+.project-bio {
+  font-size: 1.6vw;
+  font-family: 'Raleway', sans-serif;
+  border-top: 1px solid white;
+  padding-top: 10px;
+  // font-family: 'Oranienbaum', serif;
 }
 
 
 .project-image-wrapper {
+  // height: auto;
+  // width: 45vw;
   height: auto;
-  width: 45vw;
 }
 
 .project-title {
-  text-transform: uppercase;
-  font-size: 6vw;
+  // text-transform: uppercase;
+  font-size: 5vw;
+  margin-bottom: 10px;
+  // position: relative;
+  // // top: 35px;
+  // top: 35px;
+  // left: 20px;
 }
 
 .project-image {
-  max-width: 100%;
-  max-height: 100%;
+  width: 45vw;
+  // height: 35vh;
   object-fit: cover;
+  border: 4px solid $colorA;
+  // border: 18px solid white;
+  // background-color: #f3d3e2;
   // filter: gray;
   // -webkit-filter: grayscale(100%);
   // transition: 1s;
   // opacity: 0;
 }
+
+.project-wrapper {
+  margin: 4vh 6vw;
+}
+
+.project-bio-wrapper {
+  padding: 0 2vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-links {
+  align-self: flex-end;
+  justify-self: flex-start;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding-right: 5px;
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 3px;
+
+}
+
+.bi-box-arrow-up-right,
+.bi-github {
+  width: 2vw;
+  height: 2vw;
+  margin-left: 2vw;
+}
+
+// bi-github
+
 
 // img:hover {
 //   filter: none;
@@ -171,6 +285,22 @@ a {
 //   opacity: 1;
 // }
 
+
+// .rickys-records-wrapper {
+//   background-color: #f3d3e2;
+// }
+
+// .tetris-wrapper {
+//   background-color: #abece1;
+// }
+
+// .cityspace-wrapper {
+//   background-color: #E9D2CE;
+// }
+
+// .gorillazapp-wrapper {
+//   background-color: #bfeb9e;
+// }
 
 //* Experience Section
 
@@ -187,13 +317,28 @@ a {
 
 .experience-image-wrapper {
   height: auto;
-  width: 45vw;
+  width: 30vw;
+  margin: 10vw;
   // flex-grow: 1;
 }
 
 .experience-title {
-  font-size: 4vw;
+  font-size: 2vw;
+  font-weight: normal;
+  margin: 1vw 0;
 }
+
+.experience-list-header {
+  font-weight: normal;
+  margin: 0;
+  font-size: 2vw;
+}
+
+li {
+  list-style: none;
+}
+
+
 
 .experience-image {
   max-width: 100%;
@@ -201,7 +346,32 @@ a {
   object-fit: cover;
 }
 
+.surrey-uni-logo {
+  -webkit-filter: invert(100%); /* Safari/Chrome */
+  filter: invert(100%);
+}
+
 .experience-content-wrapper {
   width: 100vw;
   font-size: 2vw;
+}
+
+.experience-info {
+  white-space: pre-line;
+}
+
+
+//* Events
+
+.event-image-wrapper {
+  height: auto;
+  width: 30vw;
+  margin: 20px;
+}
+
+.event-content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 70%;
 }
