@@ -17,15 +17,24 @@ function Events() {
         <img
           src={oct19}
           alt="Hiya October 2019"
-          className="project-image"
+          className="event-image"
         />
       </div>
 
-      <div className="event-image-wrapper">
+      <div className="event-image-wrapper hiya-may-19">
         <img
           src={may19}
           alt="Hiya May 2019"
-          className="project-image"
+          className="event-image"
+        />
+      </div>
+
+
+      <div className="event-image-wrapper">
+        <img
+          src={aug18}
+          alt="Hiya August 2018"
+          className="event-image"
         />
       </div>
 
@@ -33,18 +42,9 @@ function Events() {
         <img
           src={jan19}
           alt="Hiya January 2019"
-          className="project-image"
+          className="event-image"
         />
       </div>
-
-      <div className="event-image-wrapper">
-        <img
-          src={aug18}
-          alt="Hiya August 2018"
-          className="project-image"
-        />
-      </div>
-
 
 
 

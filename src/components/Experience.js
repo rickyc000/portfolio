@@ -27,9 +27,9 @@ function Experience() {
           />
         </div>
         <div className="experience-content-wrapper">
-          <h4 className="experience-title">
+          {/* <h4 className="experience-title">
             General Assembly
-          </h4>
+          </h4> */}
           <h5 className="experience-role">
             Software Engineering Immersive Course (20-21)
           </h5>
@@ -48,9 +48,9 @@ function Experience() {
           />
         </div>
         <div className="experience-content-wrapper">
-          <h4 className="experience-title">
+          {/* <h4 className="experience-title">
             Ochre
-          </h4>
+          </h4> */}
           <h5 className="experience-role">
             Client Services Manager (17-20)
           </h5>
@@ -61,7 +61,7 @@ function Experience() {
             {'\n'}
             Clients:
           </div>
-          <ul>
+          <ul className="clients-list">
             {/* <h6 className="experience-list-header">
               Clients:
             </h6> */}
@@ -88,9 +88,9 @@ function Experience() {
           />
         </div>
         <div className="experience-content-wrapper">
-          <h4 className="experience-title">
+          {/* <h4 className="experience-title">
             Bleep
-          </h4>
+          </h4> */}
           <h5 className="experience-role">
             Content Assistant (16-17)
           </h5>
@@ -109,9 +109,9 @@ function Experience() {
           />
         </div>
         <div className="experience-content-wrapper">
-          <h4 className="experience-title">
+          {/* <h4 className="experience-title">
             University of Surrey
-          </h4>
+          </h4> */}
           <h5 className="experience-role">
             BMus (Hons) Creative Music Technology (13-16)
           </h5>

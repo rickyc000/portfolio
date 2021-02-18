@@ -28,15 +28,16 @@ main {
   // font-size: 3.5vw;
   // width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   // height: 20vw;
   z-index: 1;
-
+  width: 100%;
   margin: 0;
   // background-color: white;
   position: absolute;
   top: 0;
   right: 0;
+  padding: 0;
   // width: 100vw;
 }
 
@@ -72,7 +73,13 @@ a {
 }
 
 .home-button {
-  margin-right: auto;
+  position: fixed;
+  left: 0;
+}
+
+.bi-emoji-smile-upside-down {
+  font-size: 30px;
+  margin: 5px 0 0 5px;
 }
 
 .projects-section,
@@ -143,6 +150,7 @@ a {
   // margin: 5vw;
   height: 100vh;
   flex-grow: 1;
+
   // border: 1px dashed green;
 }
 
@@ -216,6 +224,10 @@ a {
   // height: auto;
   // width: 45vw;
   height: auto;
+}
+
+.projects-content-wrapper {
+  margin-bottom: 50px;
 }
 
 .project-title {
@@ -387,6 +399,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .experience-info {
@@ -397,7 +410,7 @@ li {
   white-space: pre-line;
 }
 
-ul {
+.clients-list {
   margin: 0;
   padding: 0;
   font-size: 1.6vw;
@@ -412,13 +425,36 @@ ul {
 
 .event-image-wrapper {
   height: auto;
-  width: 30vw;
-  margin: 20px;
+  // width: 20vw;
+  margin: 2vw;
+  // display: flex;
 }
 
 .event-content-wrapper {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 70%;
+  margin-bottom: 50px;
+  // width: 70%;
 }
+
+.event-image {
+  width: 35vw;
+  object-fit: cover;
+  // border: 4px solid white;
+}
+
+.events-section {
+  background-color: #70ED48;
+  color: white;
+  border-top: 3px solid #4bc422;
+  // margin-bottom: 50px;
+}
+
+.hiya-may-19 {
+  // margin-bottom: 50px;xt
+  justify-self: flex-end;
+}
+
+//* Contact Section
+
