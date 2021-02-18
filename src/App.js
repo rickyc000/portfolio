@@ -18,9 +18,7 @@ const navSections = ['projects', 'experience', 'events', 'contact']
 function App() {
 
   const scrollRef = React.createRef()
-
   useEffect(() => {
-
     setTimeout(() => {
       const scroll = new locomotiveScroll({
         el: scrollRef.current,
@@ -29,7 +27,6 @@ function App() {
       console.log(scroll)
     }, 200)
   })
-
 
   return (
     <main data-scroll-container ref={scrollRef}>
@@ -45,7 +42,6 @@ function App() {
 
       <div>
         <div>
-
           <div
             data-scroll-section
             className="about-section"
@@ -69,7 +65,7 @@ function App() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="45"
                 height="45"
-                fill="#4b4e53"
+                fill="black"
                 className="bi bi-chevron-down"
                 viewBox="0 0 16 16"
               >

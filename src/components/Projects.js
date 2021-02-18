@@ -40,7 +40,7 @@ function Projects() {
             Ricky&apos;s Records
           </div>
           <div className="project-bio">
-            Ricky’s Records is a PostgreSQL and Django REST Framework full stack application.  Browse and listen to releases across a range of genres and add them to your own collection.
+            Ricky’s Records is a PostgreSQL and Django REST Framework full stack application. Browse releases, listen to tracks across a range of genres and build up your own collection.
           </div>
           <div className="project-links">
             <a
@@ -69,7 +69,7 @@ function Projects() {
             Tetris
           </div>
           <div className="project-bio">
-            Solo project. A vanilla JavaScript remake of the classic arcade game.
+            A vanilla JavaScript remake of the classic arcade game. Built as a solo project.
           </div>
           <div className="project-links">
             <a
@@ -122,7 +122,7 @@ function Projects() {
             GorillazApp
           </div>
           <div className="project-bio">
-            Shuffle through tracks from the Gorillaz back catalogue. Built with React and the iTunes Search API as a pair project.
+            Shuffle through and listen to tracks from the Gorillaz back catalogue. Built with React and the iTunes Search API as a pair project.
           </div>
           <div className="project-links">
             <a href="https://gorillazapp.netlify.app" target="_blank" rel="noreferrer"><ExternalLink /></a>
