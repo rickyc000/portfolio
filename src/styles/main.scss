@@ -24,39 +24,34 @@ main {
   color: $colorA;
 }
 
+//* NAVBAR
+
 .nav-bar {
-  // font-size: 3.5vw;
-  // width: 100%;
   display: flex;
   justify-content: flex-end;
-  // height: 20vw;
   z-index: 1;
   width: 100%;
   margin: 0;
-  // background-color: white;
   position: absolute;
   top: 0;
   right: 0;
   padding: 0;
-  // width: 100vw;
+  // filter: hue-rotate(60deg);
+  color: black;
+  // mix-blend-mode: difference;
 }
 
 .nav-bar li {
   font-size: 30px;
-  // font-size: 3rem;
   list-style: none;
-  // border-bottom: 1px solid #405b7a;
   text-transform: capitalize;
   padding: 3px 15px 3px 3px;
-  // font-weight: normal;
   // letter-spacing: .5vw;
-  // display:inline-block;
-  // transform:scale(1,1.6);
-  // font-weight: 600;
+  // transform:scale(1,1.5);
+  font-weight: 600;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
-  // padding: 10px 5px;
-  // height: 100px;
+  color: black;
 }
 
 // @media only screen and (max-width: 920px) {
@@ -67,9 +62,10 @@ main {
 
 a {
   text-decoration: none;
-  // color: rgb(93, 90, 134);
-  // color: black;
-  color: $colorA;
+}
+
+li a {
+  color: inherit;
 }
 
 .home-button {
@@ -87,26 +83,10 @@ a {
 .events-section,
 .contact-section,
 .about-section {
-  // height: 100vh;
-  // font-size: 5vh;
   display: flex;
-  // margin: 10px 0;
-  // justify-content: center;
 }
 
 
-
-.events-section {
-  // height: 100vh;
-  // background-color: palegreen;
-  flex-direction: column;
-}
-
-.contact-section {
-  height: 200vh;
-  flex-direction: column;
-  // background-color: palegoldenrod;
-}
 
 
 
@@ -147,17 +127,13 @@ a {
 }
 
 .about-section {
-  // margin: 5vw;
   height: 100vh;
   flex-grow: 1;
-
-  // border: 1px dashed green;
 }
 
 .title-section {
   flex-grow: 1;
   height: 100%;
-  // border: 1px dotted red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -166,11 +142,9 @@ a {
 }
 
 .scroll-down-wrapper {
-  // border: 1px dotted blue;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
-  // height: 100%;
+  margin-bottom: 10px;
 }
 
 
@@ -185,29 +159,19 @@ a {
   justify-content: center;
 }
 
-//* Project Section
+//* PROJECTS
 
 .projects-section {
-  // height: 130vh;
   border-top: 3px solid $colorC;
   background-color: $colorE;
   flex-direction: column;
   font-family: 'Cardo', serif;
-  // border: 1px dashed green;
-  // height: 255vh;
-  color: $colorA;
+  // color: $colorA;
   color: white;
-  // display: flex;
-  // justify-content: center;
-  // flex-direction: column;
 }
 
 .project-wrapper {
-  // background-color: #fff6e4;
   display: flex;
-  // flex-direction: column;
-  // margin: 15px;
-  // width: 70%;
 }
 
 
@@ -216,13 +180,10 @@ a {
   font-family: 'Raleway', sans-serif;
   border-top: 1px solid white;
   padding-top: 10px;
-  // font-family: 'Oranienbaum', serif;
 }
 
 
 .project-image-wrapper {
-  // height: auto;
-  // width: 45vw;
   height: auto;
 }
 
@@ -231,13 +192,8 @@ a {
 }
 
 .project-title {
-  // text-transform: uppercase;
   font-size: 5vw;
   margin-bottom: 10px;
-  // position: relative;
-  // // top: 35px;
-  // top: 35px;
-  // left: 20px;
 }
 
 .project-image {
@@ -282,8 +238,6 @@ a {
   margin-left: 2vw;
 }
 
-// bi-github
-
 
 // img:hover {
 //   filter: none;
@@ -298,27 +252,9 @@ a {
 //   opacity: 1;
 // }
 
-
-// .rickys-records-wrapper {
-//   background-color: #f3d3e2;
-// }
-
-// .tetris-wrapper {
-//   background-color: #abece1;
-// }
-
-// .cityspace-wrapper {
-//   background-color: #E9D2CE;
-// }
-
-// .gorillazapp-wrapper {
-//   background-color: #bfeb9e;
-// }
-
-//* Experience Section
+//* EXPERIENCE
 
 .experience-section {
-  // display: flex;
   flex-direction: column;
   background-color: white;
   color: black;
@@ -328,10 +264,6 @@ a {
 
 .experience-wrapper {
   display: flex;
-  // justify-content: center;
-  // margin: 7vh 0;
-  // border: 3px dotted greenyellow;
-  // flex-direction: column;
   margin: 5vh 0;
   width: 65%;
 }
@@ -342,17 +274,13 @@ a {
   margin: 13px 10vw 2px 0;
   display: flex;
   align-items: flex-start;
-  // border: 2px dashed plum;
-  // flex-grow: 1;
 }
 
 .experience-title {
   font-size: 4.5vw;
   margin-bottom: 5px;
-  // border: 2px dotted red;
   font-weight: normal;
   width: 100%;
-  // margin: 1vw 0;
 }
 
 h4, h5 {
@@ -421,7 +349,11 @@ li {
 
 
 
-//* Events
+//* EVENTS
+
+.events-section {
+  flex-direction: column;
+}
 
 .event-image-wrapper {
   height: auto;
@@ -435,26 +367,56 @@ li {
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 50px;
-  // width: 70%;
 }
 
 .event-image {
   width: 35vw;
   object-fit: cover;
-  // border: 4px solid white;
+  border: 6px solid white;
 }
 
 .events-section {
   background-color: #70ED48;
   color: white;
   border-top: 3px solid #4bc422;
-  // margin-bottom: 50px;
 }
 
 .hiya-may-19 {
-  // margin-bottom: 50px;xt
   justify-self: flex-end;
 }
 
-//* Contact Section
 
+//* CONTACT
+
+.contact-section {
+  // height: 50vh;
+  flex-direction: column;
+  background-color: #A2A3A5;
+  color: white;
+  border-top: 3px solid #cecece;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.contact-links a {
+  color: white;
+  font-size: 2.8vw;
+  font-family: 'Raleway', sans-serif;
+  padding: 10vw;
+}
+
+.back-to-top-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.back-to-top {
+  margin: 1vw 2vw;
+}
