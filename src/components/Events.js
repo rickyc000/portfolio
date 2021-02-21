@@ -8,8 +8,6 @@ import oct19 from '../assets/events/hiya-october-2019-comp.png'
 
 function Events() {
 
-
-
   return (
     <div className="event-content-wrapper">
 
@@ -29,7 +27,6 @@ function Events() {
         />
       </div>
 
-
       <div className="event-image-wrapper">
         <img
           src={aug18}
@@ -45,8 +42,6 @@ function Events() {
           className="event-image"
         />
       </div>
-
-
 
     </div>
   )

@@ -45,11 +45,11 @@ function Projects() {
           <div className="project-links">
             <a
               href="https://rickys-records.herokuapp.com/"
-              target="_blank" rel="noreferrer">
+              target="_blank" rel="noopener noreferrer">
               <ExternalLink size={32} color={'white'}/></a>
             <a
               href="https://github.com/rickyc000/sei-project-4"
-              target="_blank" rel="noreferrer"><GitHubIcon size={32} color={'white'}/></a>
+              target="_blank" rel="noopener noreferrer"><GitHubIcon size={32} color={'white'}/></a>
           </div>
         </div>
 
@@ -74,12 +74,12 @@ function Projects() {
           <div className="project-links">
             <a
               href="https://rickyc000.github.io/sei-project-1"
-              target="_blank" rel="noreferrer">
+              target="_blank" rel="noopener noreferrer">
               <ExternalLink size={32} color={'white'}/>
             </a>
             <a
               href="https://github.com/rickyc000/sei-project-1"
-              target="_blank" rel="noreferrer">
+              target="_blank" rel="noopener noreferrer">
               <GitHubIcon size={32} color={'white'}/>
             </a>
           </div>
@@ -102,8 +102,8 @@ function Projects() {
             A full-stack MERN app built as part of a group project. Discover and share your favourite spots in London.
           </div>
           <div className="project-links">
-            <a href="https://cityspace-app.herokuapp.com" target="_blank" rel="noreferrer"><ExternalLink size={32} color={'white'}/></a>
-            <a href="https://github.com/rickyc000/sei-project-3" target="_blank" rel="noreferrer"><GitHubIcon size={32} color={'white'}/></a>
+            <a href="https://cityspace-app.herokuapp.com" target="_blank" rel="noopener noreferrer"><ExternalLink size={32} color={'white'}/></a>
+            <a href="https://github.com/rickyc000/sei-project-3" target="_blank" rel=" noopener noreferrer"><GitHubIcon size={32} color={'white'}/></a>
           </div>
         </div>
       </div>
@@ -125,8 +125,8 @@ function Projects() {
             Shuffle through and listen to tracks from the Gorillaz back catalogue. Built with React and the iTunes Search API as a pair project.
           </div>
           <div className="project-links">
-            <a href="https://gorillazapp.netlify.app" target="_blank" rel="noreferrer"><ExternalLink size={32} color={'white'}/></a>
-            <a href="https://github.com/rickyc000/sei-project-2" target="_blank" rel="noreferrer"><GitHubIcon size={32} color={'white'}/></a>
+            <a href="https://gorillazapp.netlify.app" target="_blank" rel="noopener noreferrer"><ExternalLink size={32} color={'white'}/></a>
+            <a href="https://github.com/rickyc000/sei-project-2" target="_blank" rel="noopener noreferrer"><GitHubIcon size={32} color={'white'}/></a>
           </div>
         </div>
       </div>

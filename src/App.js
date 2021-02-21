@@ -5,14 +5,16 @@ import React, { useEffect } from 'react'
 import Projects from './components/Projects'
 import Experience from './components/Experience'
 import Events from './components/Events'
+import Skills from './components/Skills'
 
 import './styles/main.scss'
 import './styles/base.css'
 
 import Smiley from './assets/icons/Smiley.js'
-import Mail from './assets/icons/Mail.js'
-import ExternalLink from './assets/icons/ExtLinkIcon.js'
-import GitHubIcon from './assets/icons/GitHubIcon.js'
+// import Mail from './assets/icons/Mail.js'
+// import ExternalLink from './assets/icons/ExtLinkIcon.js'
+// import GitHubIcon from './assets/icons/GitHubIcon.js'
+// import LinkedIn from './assets/icons/LinkedInIcon.js'
 
 // import downChevron from './assets/icons/icons8-chevron-down-96.png'
 
@@ -89,7 +91,7 @@ function App() {
             </div>
           </div>
 
-
+          <div data-scroll-section className="section-divider"></div>
 
           <div
             data-scroll-section
@@ -100,8 +102,9 @@ function App() {
               Projects
             </div>
             <Projects />
-
           </div>
+
+          <div data-scroll-section className="section-divider"></div>
 
           <div data-scroll-section className="experience-section" id="experience"  >
             <div data-scroll className="heading">
@@ -110,12 +113,17 @@ function App() {
             <Experience />
           </div>
 
+          <div data-scroll-section className="section-divider"></div>
+
+
           <div data-scroll-section className="skills-section" id="skills"  >
             <div data-scroll className="heading">
               Skills
             </div>
-            Skills section text
+            <Skills />
           </div>
+
+          <div data-scroll-section className="section-divider-white"></div>
 
 
           <div data-scroll-section className="events-section" id="events">
@@ -125,6 +133,8 @@ function App() {
             <Events />
           </div>
 
+          <div data-scroll-section className="section-divider-white"></div>
+
           <div data-scroll-section className="contact-section" id="contact">
             <div data-scroll className="heading">
               Contact
@@ -132,25 +142,37 @@ function App() {
             <div className="contact-links">
               <div>
                 <a href="mailto:r.cato@live.com" target="_blank" rel="noopener noreferrer">
-                  <Mail size={30} />
+                  {/* <Mail size={30} /> */}
                   Email</a>
               </div>
               <div>
-                <a href="https://www.linkedin.com/in/ricky-cato/" target="_blank" rel="noopener noreferrer"><ExternalLink size={32} color={'white'} />LinkedIn</a>
+                <a href="https://www.linkedin.com/in/ricky-cato/" target="_blank" rel="noopener noreferrer">
+                  {/* <LinkedIn size={30} color={'white'} /> */}
+                  LinkedIn</a>
               </div>
               <div>
-                <a href="https://github.com/rickyc000" target="_blank" rel="noopener noreferrer"><GitHubIcon size={32} color={'white'} />GitHub</a>
+                <a href="https://github.com/rickyc000" target="_blank" rel="noopener noreferrer">
+                  {/* <GitHubIcon size={32} color={'white'} /> */}
+                  GitHub</a>
               </div>
             </div>
-            <div className="back-to-top-wrapper">
-              <div className="back-to-top">
-                <a href="#about" data-scroll-to>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="95" height="95" fill="white" className="bi bi-arrow-up" viewBox="0 0 16 16">
-                    <path fillRule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
-                  </svg>
-                </a>
+            <div className="image-arrow-wrapper">
+              <div className="windows-image-wrapper">
+                <img
+                  className="windows-image"
+                  src="https://www.extremetech.com/wp-content/uploads/2014/04/bliss-windows-xp-original.jpg" alt="windows-wallpaper" />
+              </div>
+              <div className="back-to-top-wrapper">
+                <div className="back-to-top">
+                  <a href="#about" data-scroll-to>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="135" height="135" fill="white" className="bi bi-arrow-up" viewBox="0 0 16 16">
+                      <path fillRule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
+
           </div>
 
         </div>
