@@ -9,7 +9,7 @@ import ochre from '../assets/experience/ochre.png'
 import bleep from '../assets/experience/bleep.png'
 import generalAssembly from '../assets/experience/ga.png'
 import surreyUni from '../assets/experience/university-of-surrey-2.png'
-
+import hiya from '../assets/experience/hiya.png'
 
 function Experience() {
 
@@ -17,6 +17,13 @@ function Experience() {
 
   return (
     <div className="experience-content-wrapper">
+      <div className="about-wrapper">
+        <div className="about-text">
+          In my previous role working for a music-focused e-commerce platform, I was able to combine my love of music with a unique opportunity to help artists connect with their fans. Working closely with talented developers on a daily basis sparked my interest in software engineering which led me to studying full-time at General Assembly.{'\n'}
+          {'\n'}
+          I thrive when collaborating on forward-thinking and innovative projects with a passionate team of people and look forward to my career as a developer.
+        </div>
+      </div>
 
       <div className="experience-wrapper">
         <div className="experience-image-wrapper">
@@ -30,8 +37,11 @@ function Experience() {
         </div>
         <div className="experience-content-wrapper">
           <h5 className="experience-role">
-            Software Engineering Immersive Course (20-21)
+            Software Engineering Immersive Course {'\n'}
           </h5>
+          <div className="experience-dates">
+            Nov 2020 - Feb 2021
+          </div>
           <div className="experience-info">
             12 week full-time course, learning to build full stack applications with key programming languages and frameworks. {'\n'}
             {'\n'}
@@ -46,19 +56,22 @@ function Experience() {
         <div className="experience-image-wrapper">
 
           <img
-            src={generalAssembly}
+            src={hiya}
             alt="Hiya"
             className="experience-image"
           />
         </div>
         <div className="experience-content-wrapper">
           <h5 className="experience-role">
-            Founder (18-Present)
+            Founder
           </h5>
+          <div className="experience-dates">
+            Aug 2018 - present
+          </div>
           <div className="experience-info">
             London-based collective and event-series showcasing emerging DJs playing forward-thinking music across a range of genres.{'\n'}
             {'\n'}
-            Overall control of progamming, promotion and design, venue hire and artist bookings.
+            Overall control of programming, promotion and design, venue hire and artist bookings.
           </div>
         </div>
       </div>
@@ -75,8 +88,11 @@ function Experience() {
         </div>
         <div className="experience-content-wrapper">
           <h5 className="experience-role">
-            Client Services Manager (17-20)
+            Client Services Manager
           </h5>
+          <div className="experience-dates">
+            Apr 2017 - Oct 2020
+          </div>
           <div className="experience-info">
             Store management across a range of direct to consumer stores for artists, labels and distributors. Providing client support in site and product creation and stock management across multiple warehouses worldwide.{'\n'}
             {'\n'}
@@ -87,6 +103,7 @@ function Experience() {
           <ul className="clients-list">
             <li>Warp Records</li>
             <li>[PIAS]</li>
+            <li>Mixcloud</li>
             <li>Resident Advisor</li>
             <li>NTS Radio</li>
             <li>!K7 Records</li>
@@ -111,8 +128,11 @@ function Experience() {
         </div>
         <div className="experience-content-wrapper">
           <h5 className="experience-role">
-            Content Assistant (16-17)
+            Content Assistant
           </h5>
+          <div className="experience-dates">
+            Oct 2016 - Apr 2017
+          </div>
           <div className="experience-info">
             Digital asset management, assisting in the sale of physical and digital products on Bleep.com. Produced and edited visual and audio marketing content and handled customer support.
           </div>
@@ -129,8 +149,11 @@ function Experience() {
         </div>
         <div className="experience-content-wrapper">
           <h5 className="experience-role">
-            BMus - Creative Music Technology (13-16)
+            BMus - Creative Music Technology (2013 - 2016)
           </h5>
+          <div className="experience-dates">
+            Sep 2013 - Jun 2016
+          </div>
           <div className="experience-info">
             Modules included visual programming languages such as Max/MSP and Reaktor, as well as Sound Design, Synthesis & Sampling and Composition Technologies.
           </div>

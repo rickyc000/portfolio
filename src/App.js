@@ -1,6 +1,10 @@
 
-import locomotiveScroll from 'locomotive-scroll'
-import React, { useEffect } from 'react'
+// import locomotiveScroll from 'locomotive-scroll'
+// import React, { useEffect } from 'react'
+
+import React from 'react'
+
+import { Link } from 'react-scroll'
 
 import Projects from './components/Projects'
 import Experience from './components/Experience'
@@ -11,45 +15,57 @@ import './styles/main.scss'
 import './styles/base.css'
 
 import Smiley from './assets/icons/Smiley.js'
-// import Mail from './assets/icons/Mail.js'
-// import ExternalLink from './assets/icons/ExtLinkIcon.js'
-// import GitHubIcon from './assets/icons/GitHubIcon.js'
-// import LinkedIn from './assets/icons/LinkedInIcon.js'
-
-// import downChevron from './assets/icons/icons8-chevron-down-96.png'
-
-
 
 const navSections = ['projects', 'experience', 'skills', 'events', 'contact']
 
 function App() {
 
-  const scrollRef = React.createRef()
-  useEffect(() => {
-    setTimeout(() => {
-      const scroll = new locomotiveScroll({
-        el: scrollRef.current,
-        smooth: true,
-      })
-      console.log(scroll)
-    }, 200)
-  })
+  // window.addEventListener('scroll', changeBackground)
+
+  // const scrollRef = React.createRef()
+
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     const scroll = new locomotiveScroll({
+  //       el: scrollRef.current,
+  //       smooth: true,
+  //     })
+  //     console.log(scroll)
+  //   }, 400)
+  // })
 
   return (
-    <main data-scroll-container ref={scrollRef}>
+    // <main data-scroll-container ref={scrollRef}>
+    <main data-scroll-container>
       <div className="nav-section">
         <ul className="nav-bar">
-          <li className="home-button">
-            <a href="#about" data-scroll-to>
+          <Link
+            key="about"
+            activeClass="active"
+            className="about"
+            to="about"
+            spy={true}
+            smooth={true}
+            duration={1000} >
+            <li className="home-button">
               <Smiley />
-            </a>
-
-          </li>
-
-          {navSections.map((section =>
-            <li key={section}>
-              <a href={`#${section}`} data-scroll-to>{section}</a>
             </li>
+          </ Link>
+          {navSections.map((section =>
+            <Link
+              key={section}
+              activeClass="active"
+              className={section}
+              to={section}
+              spy={true}
+              smooth={true}
+              duration={1000} >
+              <li key={section}>
+                {section}
+                {/* <a href={`#${section}`} data-scroll-to>{section}</a> */}
+              </li>
+            </Link>
           ))}
         </ul>
       </div>
@@ -105,13 +121,14 @@ function App() {
           </div>
 
           <div data-scroll-section className="section-divider"></div>
-
+          {/* <Element name="experience" className="experience"> */}
           <div data-scroll-section className="experience-section" id="experience"  >
             <div data-scroll className="heading">
               Experience
             </div>
             <Experience />
           </div>
+          {/* </Element> */}
 
           <div data-scroll-section className="section-divider"></div>
 
@@ -139,37 +156,45 @@ function App() {
             <div data-scroll className="heading">
               Contact
             </div>
+            {/* <div className="about-wrapper">
+              <div className="about-text">
+                In my previous role working for a music-focused e-commerce platform, I was able to combine my love of music with a unique opportunity to help artists connect with their fans. Working closely with talented developers on a daily basis sparked my interest in software engineering which led me to studying full-time at General Assembly.{'\n'}
+                {'\n'}
+                I thrive when collaborating on forward-thinking and innovative projects with a passionate team of people and look forward to my career as a developer.
+              </div>
+            </div> */}
             <div className="contact-links">
               <div>
                 <a href="mailto:r.cato@live.com" target="_blank" rel="noopener noreferrer">
-                  {/* <Mail size={30} /> */}
                   Email</a>
               </div>
               <div>
                 <a href="https://www.linkedin.com/in/ricky-cato/" target="_blank" rel="noopener noreferrer">
-                  {/* <LinkedIn size={30} color={'white'} /> */}
                   LinkedIn</a>
               </div>
               <div>
                 <a href="https://github.com/rickyc000" target="_blank" rel="noopener noreferrer">
-                  {/* <GitHubIcon size={32} color={'white'} /> */}
                   GitHub</a>
               </div>
             </div>
             <div className="image-arrow-wrapper">
-              <div className="windows-image-wrapper">
-                <img
-                  className="windows-image"
-                  src="https://www.extremetech.com/wp-content/uploads/2014/04/bliss-windows-xp-original.jpg" alt="windows-wallpaper" />
-              </div>
               <div className="back-to-top-wrapper">
-                <div className="back-to-top">
-                  <a href="#about" data-scroll-to>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="135" height="135" fill="white" className="bi bi-arrow-up" viewBox="0 0 16 16">
+                <Link
+                  key="about"
+                  activeClass="active"
+                  className="about"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  duration={1000} >
+                  <div className="back-to-top">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="155" height="155" fill="white" className="bi bi-arrow-up" viewBox="0 0 16 16">
                       <path fillRule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
                     </svg>
-                  </a>
-                </div>
+
+                  </div>
+                </ Link>
               </div>
             </div>
 
@@ -181,6 +206,7 @@ function App() {
     </main >
   )
 }
+
 
 
 export default App

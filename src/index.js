@@ -8,3 +8,8 @@ ReactDOM.render(
   <App />,
   document.getElementById('root')
 )
+
+// scroll.destroy()
+// document.addEventListener('DOMContentLoaded', function(App) { 
+//   scroll.init()
+// })

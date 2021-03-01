@@ -30,6 +30,7 @@ function Skills() {
         <li>Trello</li>
         <li>Stripe</li>
         <li>Braintree</li>
+        <li>Mapbox</li>
       </ul>
     </div>
   )

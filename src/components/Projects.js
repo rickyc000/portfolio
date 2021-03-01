@@ -10,19 +10,7 @@ import ExternalLink from '../assets/icons/ExtLinkIcon.js'
 import GitHubIcon from '../assets/icons/GitHubIcon.js'
 
 
-
-
-
 function Projects() {
-
-  // const projects = [{
-  //   title: 'Ricky\'s Records',
-  //   image: { rrecords },
-  //   bio: 'Ricky’s Records is a PostgreSQL and Django REST Framework full stack application.  Browse and listen to releases across a range of genres and add them to your own collection.',
-  //   demoLink: 'https://rickys-records.herokuapp.com/',
-  //   gitHubLink: 'https://github.com/rickyc000/sei-project-4',
-  // }]
-
 
   return (
 
@@ -40,7 +28,9 @@ function Projects() {
             Ricky&apos;s Records
           </div>
           <div className="project-bio">
-            Ricky’s Records is a PostgreSQL and Django REST Framework full stack application. Browse releases, listen to tracks across a range of genres and build up your own collection.
+            Ricky’s Records is a PostgreSQL and Django REST Framework full stack application with a React front-end. Built solo over the course of a week.{'\n'}
+            {'\n'}
+            Browse releases, listen to tracks across a range of genres and build up your own collection. 
           </div>
           <div className="project-links">
             <a
@@ -69,7 +59,9 @@ function Projects() {
             Tetris
           </div>
           <div className="project-bio">
-            A vanilla JavaScript remake of the classic arcade game. Built as a solo project.
+            A vanilla JavaScript remake of the classic arcade game.{'\n'}
+            {'\n'}
+            My first solo project, the game utilises JavaScript fundamentals such as loops, array methods and conditional statements.
           </div>
           <div className="project-links">
             <a
@@ -99,7 +91,9 @@ function Projects() {
             CitySpace
           </div>
           <div className="project-bio">
-            A full-stack MERN app built as part of a group project. Discover and share your favourite spots in London.
+            A full-stack MERN application built as part of a 4-person group project over 9 days.{'\n'}
+            {'\n'}
+            CitySpace is platform for discovering and sharing the best spots in London. Register and login to build-up a list of your favourite locations, add comments and add/edit your own spaces.
           </div>
           <div className="project-links">
             <a href="https://cityspace-app.herokuapp.com" target="_blank" rel="noopener noreferrer"><ExternalLink size={32} color={'white'}/></a>
@@ -122,7 +116,9 @@ function Projects() {
             GorillazApp
           </div>
           <div className="project-bio">
-            Shuffle through and listen to tracks from the Gorillaz back catalogue. Built with React and the iTunes Search API as a pair project.
+            Built using the iTunes Search API and React, this app lets you shuffle through and listen to tracks from the Gorillaz back catalogue.{'\n'}
+            {'\n'}
+            GorillazApp was a pair coded project developed in 48 hours.
           </div>
           <div className="project-links">
             <a href="https://gorillazapp.netlify.app" target="_blank" rel="noopener noreferrer"><ExternalLink size={32} color={'white'}/></a>
