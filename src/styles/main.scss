@@ -229,6 +229,7 @@ h1 {
 
 .project-wrapper {
   display: flex;
+  justify-content: center;
 }
 
 .project-bio {
@@ -241,6 +242,15 @@ h1 {
 @media (max-width: 690px) {
   .project-bio {
     font-size: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-bio {
+    font-size: 20px;
+  }
+  .project-bio-wrapper {
+    width: 680px;
   }
 }
 
@@ -260,11 +270,23 @@ h1 {
   margin-bottom: 10px;
 }
 
+@media (min-width: 1200px) {
+  .project-title {
+    font-size: 55px;
+  }
+}
+
 .project-image {
   width: 45vw;
   object-fit: cover;
   display: flex;
   border: 6px solid white;
+}
+
+@media (min-width: 1200px) {
+  .project-image {
+    width: 510px;
+  }
 }
 
 @media (max-width: 690px) {
@@ -336,6 +358,12 @@ h1 {
   align-items: flex-start;
 }
 
+@media (min-width: 1200px) {
+  .experience-image-wrapper {
+    width: 350px;
+  }
+}
+
 .experience-title {
   font-size: 4.5vw;
   margin-bottom: 5px;
@@ -361,6 +389,12 @@ h4, h5 {
   }
 }
 
+@media (min-width: 1200px) {
+  .experience-role {
+    font-size: 24px;
+  }
+}
+
 
 .experience-list-header {
   font-weight: normal;
@@ -379,6 +413,8 @@ li {
   max-height: 100%;
   object-fit: cover;
 }
+
+
 
 .surrey-uni-logo {
   -webkit-filter: invert(100%); /* Safari/Chrome */
@@ -407,6 +443,20 @@ li {
   }
 }
 
+@media (min-width: 1200px) {
+  .experience-info {
+    font-size: 20px;
+  }
+}
+
+// @media (min-width: 1200px) {
+//   .experience-info {
+//     width: 500px;
+//   }
+// }
+
+
+
 .experience-dates {
   font-size: 1.6vw;
   width: 100%;
@@ -416,6 +466,12 @@ li {
 @media (max-width: 690px) {
   .experience-dates {
     font-size: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .experience-dates {
+    font-size: 20px;
   }
 }
 
@@ -430,6 +486,12 @@ li {
 @media (max-width: 690px) {
   .clients-list {
     font-size: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients-list {
+    font-size: 20px;
   }
 }
 
@@ -510,6 +572,7 @@ li {
 .contact-links {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   margin-top: 4vw;
 }
@@ -518,6 +581,7 @@ li {
   color: white;
   font-size: 2.8vw;
   padding: 6vw;
+  margin: 2vh;
 }
 
 .windows-image-wrapper {
@@ -569,5 +633,12 @@ li {
 @media (max-width: 690px) {
   .about-text {
     font-size: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-text {
+    font-size: 20px;
+    width: 800px;
   }
 }
