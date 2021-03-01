@@ -49,6 +49,13 @@ main {
   transition: .2s;
 }
 
+@media (max-width: 690px) {
+  .nav-bar li {
+    font-size: 20px;
+    padding: 2px 7px 2px 2px;
+  }
+}
+
 @media (max-width: 480px) {
   .nav-bar li {
     font-size: 12px;
@@ -166,12 +173,16 @@ h1 {
   margin-left: -0.09em;
 }
 
-
-@media (max-width: 480px) {
+@media (max-width: 690px) {
   .title-wrapper {
     font-size: 45px;
+    height: 45px;
+  }
+  .bio-wrapper {
+    font-size: 20px;
   }
 }
+
 
 .scroll-down-wrapper {
   display: flex;
@@ -193,6 +204,12 @@ h1 {
   cursor: default;
 }
 
+@media (max-width: 690px) {
+  .heading {
+    font-size: 40px;
+  }
+}
+
 @media (max-width: 480px) {
   .heading {
     font-size: 30px;
@@ -202,11 +219,9 @@ h1 {
 //* PROJECTS
 
 .projects-section {
-  // border-top: 6px solid black;
   background-color: $colorE;
   flex-direction: column;
   font-family: 'Helvetica', serif;
-  // color: $colorA;
   color: white;
   position: relative; 
   z-index: 10;
@@ -216,12 +231,17 @@ h1 {
   display: flex;
 }
 
-
 .project-bio {
   font-size: 1.6vw;
   font-family: 'Helvetica', serif;
   border-top: 1px solid white;
   padding-top: 10px;
+}
+
+@media (max-width: 690px) {
+  .project-bio {
+    font-size: 12px;
+  }
 }
 
 
@@ -245,6 +265,12 @@ h1 {
   object-fit: cover;
   display: flex;
   border: 6px solid white;
+}
+
+@media (max-width: 690px) {
+  .project-image-wrapper {
+    background-color: transparent;
+  }
 }
 
 .project-wrapper {
@@ -329,6 +355,11 @@ h4, h5 {
   white-space: pre-line;
 }
 
+@media (max-width: 690px) {
+  .experience-role {
+    font-size: 12px;
+  }
+}
 
 
 .experience-list-header {
@@ -370,10 +401,22 @@ li {
   white-space: pre-line;
 }
 
+@media (max-width: 690px) {
+  .experience-info {
+    font-size: 12px;
+  }
+}
+
 .experience-dates {
   font-size: 1.6vw;
   width: 100%;
   margin-bottom: 10px;
+}
+
+@media (max-width: 690px) {
+  .experience-dates {
+    font-size: 12px;
+  }
 }
 
 .clients-list {
@@ -382,6 +425,12 @@ li {
   font-size: 1.6vw;
   font-weight: normal;
   width: 100%;
+}
+
+@media (max-width: 690px) {
+  .clients-list {
+    font-size: 12px;
+  }
 }
 
 
@@ -515,4 +564,10 @@ li {
   font-size: 1.6vw;
   margin: 0 0 4vh;
   white-space: pre-line;
+}
+
+@media (max-width: 690px) {
+  .about-text {
+    font-size: 12px;
+  }
 }
