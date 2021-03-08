@@ -104,12 +104,13 @@ function Experience() {
             <li>Warp Records</li>
             <li>[PIAS]</li>
             <li>Mixcloud</li>
-            <li>Resident Advisor</li>
+            <li>SA Recordings</li>
             <li>NTS Radio</li>
             <li>!K7 Records</li>
-            <li>Anjunabeats</li>
-            <li>Loma Vista Recordings</li>
             <li>LuckyMe</li>
+            <li>Anjunabeats</li>
+            <li>Resident Advisor</li>
+            <li>Loma Vista Recordings</li>
             <li>Because Music</li>
             <li>Partisan Records</li>
           </ul>
