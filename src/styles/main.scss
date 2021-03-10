@@ -142,6 +142,7 @@ li a {
   height: 100px;
   font-family: 'Helvetica', serif;
   font-weight: normal;
+  transition: .2s;
 }
 
 .bio-wrapper {
@@ -149,6 +150,7 @@ li a {
   text-transform: capitalize;
   font-weight: normal;
   font-family: 'Helvetica', serif;
+  transition: .2s;
 }
 
 .about-section {
@@ -641,4 +643,9 @@ li {
     font-size: 20px;
     width: 800px;
   }
+}
+
+.title-active {
+  transition: .2s;
+  color: transparent;
 }

@@ -98,7 +98,7 @@ function Experience() {
             {'\n'}
             Worked closely with development team to implement new tools and features across warehousing and store management services.{'\n'}
             {'\n'}
-            Clients:
+            Selected clients:
           </div>
           <ul className="clients-list">
             <li>Warp Records</li>

@@ -21,10 +21,7 @@ const navSections = ['projects', 'experience', 'skills', 'events', 'contact']
 function App() {
 
   // window.addEventListener('scroll', changeBackground)
-
   // const scrollRef = React.createRef()
-
-
   // useEffect(() => {
   //   setTimeout(() => {
   //     const scroll = new locomotiveScroll({
@@ -34,6 +31,14 @@ function App() {
   //     console.log(scroll)
   //   }, 400)
   // })
+
+  const [title,setTitle] = React.useState(false)
+
+  const changeBackground = () => {
+    window.scrollY >= 300 ? setTitle(true) : setTitle(false)
+  }
+
+  window.addEventListener('scroll', changeBackground)
 
   return (
     // <main data-scroll-container ref={scrollRef}>
@@ -79,10 +84,10 @@ function App() {
           >
             <div className="title-section" data-scroll data-scroll-speed="-4">
 
-              <h1 className="title-wrapper">
+              <h1 className={title ? 'title-wrapper title-active' : 'title-wrapper'}>
                 Ricky Cato
               </h1>
-              <h2 className="bio-wrapper">
+              <h2 className={title ? 'bio-wrapper title-active' : 'bio-wrapper'}>
                 Software Engineer
               </h2>
 
