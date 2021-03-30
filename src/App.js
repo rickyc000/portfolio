@@ -90,11 +90,7 @@ function App() {
               <h2 className={title ? 'bio-wrapper title-active' : 'bio-wrapper'}>
                 Software Engineer
               </h2>
-
-
             </div>
-
-
             <div className="scroll-down-wrapper" data-scroll data-scroll-sticky>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -111,9 +107,7 @@ function App() {
               </svg>
             </div>
           </div>
-
           <div data-scroll-section className="section-divider"></div>
-
           <div
             data-scroll-section
             className="projects-section"
@@ -124,50 +118,32 @@ function App() {
             </div>
             <Projects />
           </div>
-
           <div data-scroll-section className="section-divider"></div>
-          {/* <Element name="experience" className="experience"> */}
           <div data-scroll-section className="experience-section" id="experience"  >
             <div data-scroll className="heading">
               Experience
             </div>
             <Experience />
           </div>
-          {/* </Element> */}
-
           <div data-scroll-section className="section-divider"></div>
-
-
           <div data-scroll-section className="skills-section" id="skills"  >
             <div data-scroll className="heading">
               Skills
             </div>
             <Skills />
           </div>
-
           <div data-scroll-section className="section-divider-white"></div>
-
-
           <div data-scroll-section className="events-section" id="events">
             <div data-scroll className="heading">
               Events
             </div>
             <Events />
           </div>
-
           <div data-scroll-section className="section-divider-white"></div>
-
           <div data-scroll-section className="contact-section" id="contact">
             <div data-scroll className="heading">
               Contact
             </div>
-            {/* <div className="about-wrapper">
-              <div className="about-text">
-                In my previous role working for a music-focused e-commerce platform, I was able to combine my love of music with a unique opportunity to help artists connect with their fans. Working closely with talented developers on a daily basis sparked my interest in software engineering which led me to studying full-time at General Assembly.{'\n'}
-                {'\n'}
-                I thrive when collaborating on forward-thinking and innovative projects with a passionate team of people and look forward to my career as a developer.
-              </div>
-            </div> */}
             <div className="contact-links">
               <div>
                 <a href="mailto:r.cato@live.com" target="_blank" rel="noopener noreferrer">
@@ -197,17 +173,13 @@ function App() {
                     <svg xmlns="http://www.w3.org/2000/svg" width="155" height="155" fill="white" className="bi bi-arrow-up" viewBox="0 0 16 16">
                       <path fillRule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
                     </svg>
-
                   </div>
                 </ Link>
               </div>
             </div>
-
           </div>
-
         </div>
       </div>
-
     </main >
   )
 }
