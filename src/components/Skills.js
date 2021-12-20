@@ -10,6 +10,7 @@ function Skills() {
         <li>CSS3</li>
         <li>Sass</li>
         <li>Yarn</li>
+        <li>Mako</li>
         <li>NPM</li>
         <li>React.js</li>
         <li>React Semantic UI</li>
@@ -19,7 +20,7 @@ function Skills() {
         <li>Bulma</li>
         <li>Heroku</li>
         <li>Netlify</li>
-        <li>Django</li>
+        <li>Django REST</li>
         <li>Python</li>
         <li>Git</li>
         <li>GitHub</li>

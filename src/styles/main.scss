@@ -38,9 +38,9 @@ main {
 }
 
 .nav-bar li {
-  font-size: 30px;
+  font-size: 35px;
   list-style: none;
-  text-transform: capitalize;
+  text-transform: uppercase;
   padding: 3px 15px 3px 3px;
   text-decoration: none;
   font-family: 'Helvetica', serif;
@@ -63,6 +63,7 @@ main {
   }
 }
 
+
 .projects :hover,
 .experience :hover,
 .skills :hover,
@@ -74,6 +75,14 @@ main {
   stroke: black;
   stroke-width: .2px;
 }
+
+.bi-arrow-up {
+  text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+  transition: .2s;
+  stroke: black;
+  stroke-width: .2px;
+}
+
 
 
 a {
@@ -112,13 +121,13 @@ li a {
 
 
 .section-divider {
-  height: 6px;
+  height: 10px;
   background-color: black;
   margin: 0;
 }
 
 .section-divider-white {
-  height: 6px;
+  height: 10px;
   background-color: white;
   margin: 0;
   z-index: 10;
@@ -138,19 +147,21 @@ li a {
 }
 
 .title-wrapper {
-  font-size: 100px;
-  height: 100px;
+  font-size: 148px;
+  height: 148px;
   font-family: 'Helvetica', serif;
   font-weight: normal;
   transition: .2s;
 }
 
 .bio-wrapper {
-  font-size: 30px;
-  text-transform: capitalize;
+  font-size: 28px;
+  text-transform: none;
   font-weight: normal;
   font-family: 'Helvetica', serif;
   transition: .2s;
+  line-height: 1.5;
+  max-width: 1120px;
 }
 
 .about-section {
@@ -165,6 +176,7 @@ li a {
   flex-direction: column;
   justify-content: center;
   margin-left: 20px;
+  margin-right: 20px;
   position:fixed;
 }
 
@@ -185,6 +197,11 @@ h1 {
   }
 }
 
+.bio-link {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
 
 .scroll-down-wrapper {
   display: flex;
@@ -416,6 +433,9 @@ li {
   object-fit: cover;
 }
 
+.experience-image.hiya-logo {
+  padding: 35px;
+}
 
 
 .surrey-uni-logo {
@@ -593,9 +613,14 @@ li {
   justify-content: center;
 }
 
-.image-arrow-wrapper {
+.footer {
   display: flex;
-  height: 100%;
+  height: 10%;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .windows-image {
@@ -604,17 +629,29 @@ li {
   object-fit: cover;
 }
 
-.back-to-top-wrapper {
-  width: 100%;
+.back-to-top-wrapper,
+.email-footer-wrapper {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  
+  align-items: end;
+}
+
+.footer-email,
+.footer-email a {
+  color: $colorB;
+  background-color: black;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.footer-email {
+  padding: 10px;
+  margin: 10px;
 }
 
 .back-to-top {
-  margin: 5vw;
+  margin: 8px;
   cursor: pointer;
 }
 
@@ -645,7 +682,8 @@ li {
   }
 }
 
-.title-active {
+.title-active,
+.title-active .bio-link {
   transition: .2s;
   color: transparent;
 }

@@ -10,6 +10,7 @@ import bleep from '../assets/experience/bleep.png'
 import generalAssembly from '../assets/experience/ga.png'
 import surreyUni from '../assets/experience/university-of-surrey-2.png'
 import hiya from '../assets/experience/hiya.png'
+import artlogic from '../assets/experience/artlogic.png'
 
 function Experience() {
 
@@ -17,11 +18,37 @@ function Experience() {
 
   return (
     <div className="experience-content-wrapper">
-      <div className="about-wrapper">
+      {/* <div className="about-wrapper">
         <div className="about-text">
           In my previous role working for a music-focused e-commerce platform, I was able to combine my love of music with a unique opportunity to help artists connect with their fans. Working closely with talented developers on a daily basis sparked my interest in software engineering which led me to studying full-time at General Assembly.{'\n'}
           {'\n'}
           I thrive when collaborating on forward-thinking and innovative projects with a passionate team of people and look forward to my career as a developer.
+        </div>
+      </div> */}
+
+      <div className="experience-wrapper">
+        <div className="experience-image-wrapper">
+          <a href="https://artlogic.net/" target="_blank" rel="noopener noreferrer">
+            <img
+              src={artlogic}
+              alt="Artlogic"
+              className="experience-image"
+            />
+          </a>
+        </div>
+        <div className="experience-content-wrapper">
+          <h5 className="experience-role">
+            Web Developer - Client Support {'\n'}
+          </h5>
+          <div className="experience-dates">
+            May 2021 - Present
+          </div>
+          <div className="experience-info">
+            Working in Python using Mako templating, JavaScript and CSS.{'\n'}
+            {'\n'}
+            Diagnosing incoming queries from the client liaison team in relation to the Artlogic CMS product and proposing and applying practical, technical solutions.{'\n'}
+            {'\n'}
+          </div>
         </div>
       </div>
 
@@ -58,7 +85,7 @@ function Experience() {
           <img
             src={hiya}
             alt="Hiya"
-            className="experience-image"
+            className="experience-image hiya-logo"
           />
         </div>
         <div className="experience-content-wrapper">
@@ -69,7 +96,7 @@ function Experience() {
             Aug 2018 - present
           </div>
           <div className="experience-info">
-            London-based collective and event-series showcasing emerging DJs playing forward-thinking music across a range of genres.{'\n'}
+            London-based collective and event-series showcasing emerging DJs playing forward-thinking music across a range of genres. Events have featured artists Stem, Simkin, Truska and Taslo Valve amongst others.{'\n'}
             {'\n'}
             Overall control of programming, promotion and design, venue hire and artist bookings.
           </div>
@@ -102,12 +129,14 @@ function Experience() {
           </div>
           <ul className="clients-list">
             <li>Warp Records</li>
+            <li>Boiler Room</li>
             <li>[PIAS]</li>
             <li>Mixcloud</li>
             <li>SA Recordings</li>
             <li>NTS Radio</li>
             <li>!K7 Records</li>
             <li>LuckyMe</li>
+            <li>Bleep</li>
             <li>Anjunabeats</li>
             <li>Resident Advisor</li>
             <li>Loma Vista Recordings</li>
@@ -144,13 +173,13 @@ function Experience() {
         <div className="experience-image-wrapper">
           <img
             src={surreyUni}
-            alt="University of Surry"
+            alt="University of Surrey"
             className="experience-image surrey-uni-logo"
           />
         </div>
         <div className="experience-content-wrapper">
           <h5 className="experience-role">
-            BMus - Creative Music Technology (2013 - 2016)
+            BMus - Creative Music Technology
           </h5>
           <div className="experience-dates">
             Sep 2013 - Jun 2016

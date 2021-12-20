@@ -5,7 +5,7 @@ import rrecords from '../assets/projects/rrecords-crop2.png'
 import sixtenSteps from '../assets/projects/16.Steps-comp.png'
 import tetris from '../assets/projects/tetris-gameplay-crop.png'
 import cityspace from '../assets/projects/cityspace-landing-crop.png'
-import gorillazapp from '../assets/projects/gorillazapp-track-crop.png'
+// import gorillazapp from '../assets/projects/gorillazapp-track-crop.png'
 
 import ExternalLink from '../assets/icons/ExtLinkIcon.js'
 import GitHubIcon from '../assets/icons/GitHubIcon.js'
@@ -112,7 +112,7 @@ function Projects() {
         </div>
       </div>
 
-      <div className="gorillazapp-wrapper project-wrapper">
+      {/* <div className="gorillazapp-wrapper project-wrapper">
 
         <div className="project-image-wrapper">
           <a href="https://gorillazapp.netlify.app" target="_blank" rel="noopener noreferrer">
@@ -137,7 +137,7 @@ function Projects() {
             <a href="https://github.com/rickyc000/sei-project-2" target="_blank" rel="noopener noreferrer"><GitHubIcon size={32} color={'white'} /></a>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="tetris-wrapper project-wrapper">
         <div className="project-image-wrapper">
