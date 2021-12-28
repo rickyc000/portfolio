@@ -251,10 +251,23 @@ h1 {
   justify-content: center;
 }
 
+@media (max-width: 1150px) {
+  .project-wrapper {
+    flex-direction: column;
+  }
+  .project-image {
+    width: 400px;
+    margin: 30px;
+  }
+  .project-bio-wrapper {
+    max-width: 700px;
+  }
+}
+
 .project-bio {
   font-size: 18px;
   font-family: 'Helvetica', serif;
-  border-top: 1px solid white;
+  border-top: 2px solid white;
   padding-top: 10px;
 }
 
@@ -279,7 +292,7 @@ h1 {
 .project-image-wrapper {
   height: auto;
   vertical-align: top;
-  background-color: white;
+  // background-color: white;
 }
 
 .projects-content-wrapper {
@@ -305,20 +318,35 @@ h1 {
   border: 6px solid white;
 }
 
+
+//* Large screen
 @media (min-width: 1200px) {
   .project-image {
     width: 510px;
   }
 }
 
+//* Small screen
 @media (max-width: 690px) {
   .project-image-wrapper {
     background-color: transparent;
   }
+  .project-image {
+    width: 210px;
+  }
+  .project-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 870px) {
+  .project-image {
+    width: 420px;
+  }
 }
 
 .project-wrapper {
-  margin: 50px 190px 50px 140px;
+  margin: 50px 150px 50px 130px;
 }
 
 .project-bio-wrapper {
@@ -335,18 +363,27 @@ h1 {
   display: flex;
   align-items: flex-end;
   padding-right: 5px;
-  font-family: 'Raleway', sans-serif;
   padding-bottom: 3px;
-
+  font-size: 18px;
 }
 
-.bi-box-arrow-up-right,
-.bi-github {
-  width: 2vw;
-  height: 2vw;
-  margin-left: 2vw;
-  transition: .2s;
+.project-links a  {
+  background-color: white;
+  color: $colorE;
+  font-family: 'Helvetica', serif;
+  padding: 3px 5px;
+  margin: 30px 0 0 6px;
+  border-radius: 2px;
+  text-transform: uppercase;
 }
+
+// .bi-box-arrow-up-right,
+// .bi-github {
+//   width: 2vw;
+//   height: 2vw;
+//   margin-left: 2vw;
+//   transition: .2s;
+// }
 
 .bi-box-arrow-up-right:hover,
 .bi-github:hover {
@@ -368,13 +405,14 @@ h1 {
 
 .experience-wrapper {
   display: flex;
-  margin: 5vh 0;
+  margin: 50px 0;
   width: 65%;
 }
 
 .experience-image-wrapper {
   height: auto;
-  width: 30vw;
+  // width: 30vw;
+  width: 200px;
   margin: 13px 10vw 2px 0;
   display: flex;
   align-items: flex-start;
@@ -398,7 +436,7 @@ h4, h5 {
 }
 
 .experience-role {
-  font-size: 2vw;
+  font-size: 22px;
   margin-bottom: 10px;
   width: 100%;
   font-weight: normal;
@@ -421,7 +459,7 @@ h4, h5 {
 .experience-list-header {
   font-weight: normal;
   margin: 0;
-  font-size: 1.6vw;
+  font-size: 18px;
   margin: 10px 0;
 }
 
@@ -436,9 +474,9 @@ li {
   object-fit: cover;
 }
 
-.experience-image.hiya-logo {
-  padding: 35px;
-}
+// .experience-image.hiya-logo {
+//   padding: 35px;
+// }
 
 
 .surrey-uni-logo {
@@ -456,8 +494,8 @@ li {
 }
 
 .experience-info {
-  font-size: 1.6vw;
-  border-top: 1px solid black;
+  font-size: 18px;
+  border-top: 2px solid black;
   padding: 10px 0;
   white-space: pre-line;
 }
@@ -483,7 +521,7 @@ li {
 
 
 .experience-dates {
-  font-size: 1.6vw;
+  font-size: 18px;
   width: 100%;
   margin-bottom: 10px;
 }
@@ -503,7 +541,7 @@ li {
 .clients-list {
   margin: 0;
   padding: 0;
-  font-size: 1.6vw;
+  font-size: 18px;
   font-weight: normal;
   width: 100%;
 }
@@ -539,8 +577,8 @@ li {
 }
 
 .skills-list {
-  font-size: 3vw;
-  margin: 0 0 7vh;
+  font-size: 30px;
+  margin: 0 0 30px;
   padding: 0;
 }
 
@@ -549,73 +587,73 @@ li {
   justify-content: center;
 }
 
-//* EVENTS
+// //* EVENTS
 
-.events-section {
-  flex-direction: column;
-  z-index: 10;
-  position: relative; 
-}
+// .events-section {
+//   flex-direction: column;
+//   z-index: 10;
+//   position: relative; 
+// }
 
-.event-image-wrapper {
-  height: auto;
-  margin: 2vw;
-}
+// .event-image-wrapper {
+//   height: auto;
+//   margin: 20px;
+// }
 
-.event-content-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
-}
+// .event-content-wrapper {
+//   display: flex;
+//   justify-content: center;
+//   flex-wrap: wrap;
+//   margin-bottom: 50px;
+// }
 
-.event-image {
-  width: 35vw;
-  object-fit: cover;
-}
+// .event-image {
+//   width: 35vw;
+//   object-fit: cover;
+// }
 
-.events-section {
-  background-color: #A2A3A5;
-  color: white;
-}
+// .events-section {
+//   background-color: #A2A3A5;
+//   color: white;
+// }
 
-.hiya-may-19 {
-  justify-self: flex-end;
-}
+// .hiya-may-19 {
+//   justify-self: flex-end;
+// }
 
 
-//* CONTACT
+// //* CONTACT
 
-.contact-section {
-  height: 100vh;
-  flex-direction: column;
-  z-index: 10;
-  position: relative; 
-  background-color: #5edf34;
-  color: white;
-}
+// .contact-section {
+//   height: 100vh;
+//   flex-direction: column;
+//   z-index: 10;
+//   position: relative; 
+//   background-color: #5edf34;
+//   color: white;
+// }
 
-.contact-links {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 4vw;
-}
+// .contact-links {
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
+//   align-items: center;
+//   margin-top: 4vw;
+// }
 
-.contact-links a {
-  color: white;
-  font-size: 2.8vw;
-  // padding: 6vw;
-  margin: 2vh;
-}
+// .contact-links a {
+//   color: white;
+//   font-size: 2.8vw;
+//   // padding: 6vw;
+//   margin: 2vh;
+// }
 
-.windows-image-wrapper {
-  height: auto;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
+// .windows-image-wrapper {
+//   height: auto;
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+// }
 
 .footer {
   display: flex;
@@ -627,11 +665,11 @@ li {
   justify-content: space-between;
 }
 
-.windows-image {
-  height: 38vw;
-  justify-self: flex-end;
-  object-fit: cover;
-}
+// .windows-image {
+//   height: 38vw;
+//   justify-self: flex-end;
+//   object-fit: cover;
+// }
 
 .back-to-top-wrapper,
 .email-footer-wrapper {
@@ -645,7 +683,7 @@ li {
 .footer-email a {
   color: $colorB;
   background-color: black;
-  font-size: 35px;
+  font-size: 30px;
   text-transform: uppercase;
 }
 
@@ -655,12 +693,12 @@ li {
 }
 
 .footer-email {
-  padding: 10px;
-  margin: 10px;
+  padding: 7px;
+  margin: 7px;
   display: flex;
   align-items: center;
   border-radius: 7px;
-  height: 55px;
+  height: 45px;
 }
 
 .contact-label {
@@ -681,16 +719,16 @@ li {
 }
 
 .about-text {
-  font-size: 1.6vw;
-  margin: 0 0 4vh;
+  font-size: 18px;
+  margin: 0 0 50px;
   white-space: pre-line;
 }
 
-@media (max-width: 690px) {
-  .about-text {
-    font-size: 12px;
-  }
-}
+// @media (max-width: 690px) {
+//   .about-text {
+//     font-size: 12px;
+//   }
+// }
 
 @media (min-width: 1200px) {
   .about-text {

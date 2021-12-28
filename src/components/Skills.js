@@ -8,23 +8,24 @@ function Skills() {
         <li>HTML5</li>
         <li>JavaScript</li>
         <li>CSS3</li>
+        <li>Python</li>
+        <li>React.js</li>
         <li>Sass</li>
         <li>Yarn</li>
         <li>Mako</li>
         <li>NPM</li>
-        <li>React.js</li>
         <li>React Semantic UI</li>
         <li>MongoDB</li>
         <li>Express</li>
         <li>PostgreSQL</li>
         <li>Bulma</li>
+        <li>Reaktor</li>
+        <li>Max/MSP</li>
         <li>Heroku</li>
         <li>Netlify</li>
         <li>Django REST</li>
-        <li>Python</li>
-        <li>Git</li>
+        <li>GitLab</li>
         <li>GitHub</li>
-        <li>Python</li>
         <li>Node.js</li>
         <li>Insomnia</li>
         <li>Table Plus</li>

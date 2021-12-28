@@ -7,8 +7,8 @@ import tetris from '../assets/projects/tetris-gameplay-crop.png'
 import cityspace from '../assets/projects/cityspace-landing-crop.png'
 // import gorillazapp from '../assets/projects/gorillazapp-track-crop.png'
 
-import ExternalLink from '../assets/icons/ExtLinkIcon.js'
-import GitHubIcon from '../assets/icons/GitHubIcon.js'
+// import ExternalLink from '../assets/icons/ExtLinkIcon.js'
+// import GitHubIcon from '../assets/icons/GitHubIcon.js'
 
 
 function Projects() {
@@ -41,10 +41,15 @@ function Projects() {
             <a
               href="https://rickys-records.herokuapp.com/"
               target="_blank" rel="noopener noreferrer">
-              <ExternalLink size={32} color={'white'} /></a>
+              {/* <ExternalLink size={32} color={'white'} /> */}
+              Website
+            </a>
             <a
               href="https://github.com/rickyc000/sei-project-4"
-              target="_blank" rel="noopener noreferrer"><GitHubIcon size={32} color={'white'} /></a>
+              target="_blank" rel="noopener noreferrer">
+              {/* <GitHubIcon size={32} color={'white'} /> */}
+              GitHub
+            </a>
           </div>
         </div>
       </div>
@@ -74,12 +79,14 @@ function Projects() {
             <a
               href="https://rickyc000.github.io/16.Steps/"
               target="_blank" rel="noopener noreferrer">
-              <ExternalLink size={32} color={'white'} />
+              {/* <ExternalLink size={32} color={'white'} /> */}
+              Website
             </a>
             <a
               href="https://github.com/rickyc000/16.Steps"
               target="_blank" rel="noopener noreferrer">
-              <GitHubIcon size={32} color={'white'} />
+              {/* <GitHubIcon size={32} color={'white'} /> */}
+              GitHub
             </a>
           </div>
         </div>
@@ -106,8 +113,14 @@ function Projects() {
             CitySpace is platform for discovering and sharing the best spots in London. Register and login to build-up a list of your favourite locations, add comments and add/edit your own spaces.
           </div>
           <div className="project-links">
-            <a href="https://cityspace-app.herokuapp.com" target="_blank" rel="noopener noreferrer"><ExternalLink size={32} color={'white'} /></a>
-            <a href="https://github.com/rickyc000/sei-project-3" target="_blank" rel=" noopener noreferrer"><GitHubIcon size={32} color={'white'} /></a>
+            <a href="https://cityspace-app.herokuapp.com" target="_blank" rel="noopener noreferrer">
+              {/* <ExternalLink size={32} color={'white'} /> */}
+              Website
+            </a>
+            <a href="https://github.com/rickyc000/sei-project-3" target="_blank" rel=" noopener noreferrer">
+              {/* <GitHubIcon size={32} color={'white'} /> */}
+              GitHub
+            </a>
           </div>
         </div>
       </div>
@@ -164,12 +177,14 @@ function Projects() {
             <a
               href="https://rickyc000.github.io/sei-project-1"
               target="_blank" rel="noopener noreferrer">
-              <ExternalLink size={32} color={'white'} />
+              {/* <ExternalLink size={32} color={'white'} /> */}
+              Website
             </a>
             <a
               href="https://github.com/rickyc000/sei-project-1"
               target="_blank" rel="noopener noreferrer">
-              <GitHubIcon size={32} color={'white'} />
+              {/* <GitHubIcon size={32} color={'white'} /> */}
+              GitHub
             </a>
           </div>
         </div>
