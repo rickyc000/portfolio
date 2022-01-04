@@ -20,6 +20,11 @@ html, body {
 
 main {
   color: $colorA;
+  display: flex;
+}
+
+h2 {
+  margin: 0;
 }
 
 //* NAVBAR
@@ -58,7 +63,7 @@ main {
 
 @media (max-width: 480px) {
   .nav-bar li {
-    font-size: 12px;
+    font-size: 18px;
     padding: 1px 5px 1px 1px;
   }
 }
@@ -148,7 +153,7 @@ li a {
 
 .title-wrapper {
   font-size: 148px;
-  height: 148px;
+  // height: 148px;
   font-family: 'Helvetica', serif;
   font-weight: normal;
   transition: .2s;
@@ -166,7 +171,7 @@ li a {
 
 .about-section {
   height: 100vh;
-  flex-grow: 1;
+  // flex-grow: 1;
 }
 
 .title-section {
@@ -187,13 +192,22 @@ h1 {
   margin-left: -0.09em;
 }
 
-@media (max-width: 690px) {
+@media (max-width: 1000px) {
   .title-wrapper {
-    font-size: 45px;
-    height: 45px;
+    font-size: 105px;
+    // height: 45px;
   }
   .bio-wrapper {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .title-wrapper {
+    font-size: 55px;
+  }
+  .bio-wrapper {
+    font-size: 18px;
   }
 }
 
@@ -225,7 +239,7 @@ h1 {
 
 @media (max-width: 690px) {
   .heading {
-    font-size: 40px;
+    font-size: 50px;
   }
 }
 
@@ -342,6 +356,12 @@ h1 {
 @media (max-width: 870px) {
   .project-image {
     width: 420px;
+  }
+}
+
+@media (max-width: 400px) {
+  .project-image {
+    width: 220px;
   }
 }
 
