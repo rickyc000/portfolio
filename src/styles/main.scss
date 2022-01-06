@@ -124,6 +124,7 @@ li a {
 .contact-section,
 .about-section {
   display: flex;
+  width: 100%;
 }
 
 
@@ -211,6 +212,18 @@ h1 {
   .bio-wrapper {
     font-size: 18px;
   }
+  .nav-bar li {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 350px) {
+  .title-wrapper {
+    font-size: 35px;
+  }
+  .bio-wrapper {
+    font-size: 12px;
+  }
 }
 
 .bio-link {
@@ -225,6 +238,7 @@ h1 {
   align-items: flex-end;
   margin-bottom: 10px;
   height: 100vh;
+  width: 100vw;
 }
 
 
@@ -363,13 +377,13 @@ h1 {
     background-color: transparent;
   }
   .project-image {
-    width: 210px;
+    width: 240px;
   }
 }
 
 @media (max-width: 870px) {
   .project-image {
-    width: 420px;
+    width: 320px;
   }
   .project-wrapper {
     margin: 30px 0;
@@ -378,7 +392,7 @@ h1 {
 
 @media (max-width: 400px) {
   .project-image {
-    width: 220px;
+    width: 240px;
   }
 }
 
@@ -465,6 +479,7 @@ h1 {
   }
   .experience-image-wrapper {
     margin: 40px 0;
+    width: 100px;
   }
 }
 
@@ -632,6 +647,12 @@ li {
   justify-content: center;
 }
 
+@media (max-width: 690px) {
+  .skills-content-wrapper {
+    padding: 40px;
+  }
+}
+
 // //* EVENTS
 
 // .events-section {
@@ -712,6 +733,12 @@ li {
 
 @media (max-width: 650px) {
   .scroll-down-wrapper {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 870px) {
+  .back-to-top {
     visibility: hidden;
   }
 }
