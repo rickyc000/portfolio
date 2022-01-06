@@ -95,7 +95,7 @@ function App() {
                 Ricky Cato
               </h1>
               <h2 className={title ? 'bio-wrapper title-active' : 'bio-wrapper'}>
-                is a <b>Web Developer</b> based in London. He studied Creative Music Technology at The University of Surrey, then worked at <a href={bleepURL} target="_blank" rel="noopener noreferrer" className="bio-link">Bleep</a> and <a href={ochreURL} target="_blank" rel="noopener noreferrer" className="bio-link"> Ochre</a>, for clients such as Boiler Room, Warp Records and NTS Radio, before learning to code at <a href={generalAssemblyURL} target="_blank" rel="noopener noreferrer" className="bio-link">General Assembly</a>. Ricky runs/DJs at a club night called <a href={hiyaURL} target="_blank" rel="noopener noreferrer" className="bio-link">Hiya</a> and currently works on websites for artists and galleries at <a href={artlogicURL} target="_blank" rel="noopener noreferrer" className="bio-link"> Artlogic</a>. Contact him at <a href="mailto:r.cato@live.com" target="_blank" rel="noopener noreferrer" className="bio-link">r.cato@live.com</a> or via <a href={linkedInURL} target="_blank" rel="noopener noreferrer" className="bio-link">LinkedIn</a>.
+                is a <b><i>Web Developer</i></b> based in London. He studied Creative Music Technology at The University of Surrey, then worked at <a href={bleepURL} target="_blank" rel="noopener noreferrer" className="bio-link">Bleep</a> and <a href={ochreURL} target="_blank" rel="noopener noreferrer" className="bio-link"> Ochre</a>, for clients such as Boiler Room, Warp Records and NTS Radio, before learning to code at <a href={generalAssemblyURL} target="_blank" rel="noopener noreferrer" className="bio-link">General Assembly</a>. Ricky runs/DJs at a club night called <a href={hiyaURL} target="_blank" rel="noopener noreferrer" className="bio-link">Hiya</a> and currently works on websites for artists and galleries at <a href={artlogicURL} target="_blank" rel="noopener noreferrer" className="bio-link"> Artlogic</a>. Contact him at <a href="mailto:r.cato@live.com" target="_blank" rel="noopener noreferrer" className="bio-link">r.cato@live.com</a> or via <a href={linkedInURL} target="_blank" rel="noopener noreferrer" className="bio-link">LinkedIn</a>.
               </h2>
             </div>
             <div className="scroll-down-wrapper" data-scroll data-scroll-sticky>
@@ -150,7 +150,7 @@ function App() {
                 smooth={true}
                 duration={1000} >
                 <div className="back-to-top">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" fill="#f5e41b" className="bi bi-arrow-up" viewBox="0 0 16 16">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" fill="#000000" className="bi bi-arrow-up" viewBox="0 0 16 16">
                     <path fillRule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
                   </svg>
                 </div>

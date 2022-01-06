@@ -1,11 +1,15 @@
 // $colorA: #4b4e53;
-$colorA: black;
+// $colorA: black;
+$colorA: #adadad; 
 // $colorB: #fdf4e3;
 // $colorB: #F2E450;
-$colorB: #f5e41b;
+// $colorB: #f5e41b;
+$colorB: black;
 $colorC: rgb(80, 134, 169);
 $colorD: #D3E3FA;
-$colorE: #50AAF3;
+// $colorE: #50AAF3;
+$colorE: #d64f00; 
+$colorF: #6a34ff;
 
 * {
   box-sizing: border-box;
@@ -51,9 +55,14 @@ h2 {
   padding: 3px 15px 3px 3px;
   text-decoration: none;
   font-family: 'Helvetica', serif;
-  color: black;
+  color: $colorB;
+  text-shadow: 1px 0 0 $colorA, 0 -1px 0 $colorA, 0 1px 0 $colorA, -1px 0 0 $colorA;
   cursor: pointer;
   transition: .2s;
+} 
+
+.bi-emoji-smile-upside-down {
+  color: $colorA;
 }
 
 @media (max-width: 690px) {
@@ -76,18 +85,36 @@ h2 {
 .skills :hover,
 .events :hover,
 .contact :hover {
-  color: $colorB;
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  color: $colorA;
+  text-shadow: 1px 0 0 $colorA, 0 -1px 0 $colorA, 0 1px 0 $colorA, -1px 0 0 $colorA;
   transition: .2s;
   stroke: black;
   stroke-width: .2px;
 }
 
+.projects :hover {
+  color: $colorE;
+}
+
+.experience :hover {
+  color: white;
+}
+
+.skills :hover {
+  color: $colorF;
+}
+
+
 .bi-arrow-up {
   text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
   transition: .2s;
-  stroke: black;
+  stroke: $colorA;
   stroke-width: .2px;
+}
+
+.bi-arrow-up:hover {
+  stroke: $colorE;
+  // stroke-width: .3px;
 }
 
 
@@ -130,7 +157,7 @@ li a {
 
 .section-divider {
   height: 10px;
-  background-color: black;
+  background-color: $colorA;
   margin: 0;
 }
 
@@ -227,9 +254,10 @@ h1 {
 }
 
 .bio-link {
-  color: black;
+  color: $colorA;
   font-weight: bold;
   text-decoration: underline;
+  font-style: italic;
 }
 
 .scroll-down-wrapper {
@@ -622,8 +650,8 @@ li {
 //* SKILLS
 
 .skills-section {
-  background-color: #e00484;
-  background-color: #5edf34;
+  // background-color: #e00484;
+  background-color: $colorF;
   color: white;
   z-index: 10;
   position: relative; 
@@ -633,7 +661,7 @@ li {
   width: 100%;
   display: flex;
   justify-content: center;
-  
+  padding: 50px;
 }
 
 .skills-list {
@@ -647,11 +675,7 @@ li {
   justify-content: center;
 }
 
-@media (max-width: 690px) {
-  .skills-content-wrapper {
-    padding: 40px;
-  }
-}
+
 
 // //* EVENTS
 
@@ -759,10 +783,14 @@ li {
 
 .footer-email,
 .footer-email a {
-  color: $colorB;
+  color: $colorA;
   background-color: black;
   font-size: 30px;
   text-transform: uppercase;
+}
+
+.footer-email a:hover {
+  color: $colorF;
 }
 
 .footer-email a {
@@ -777,6 +805,7 @@ li {
   align-items: center;
   border-radius: 7px;
   height: 45px;
+  border: 2px solid $colorA;
 }
 
 .contact-label {
