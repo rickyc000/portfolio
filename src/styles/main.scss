@@ -8,7 +8,7 @@ $colorB: black;
 $colorC: rgb(80, 134, 169);
 $colorD: #D3E3FA;
 // $colorE: #50AAF3;
-$colorE: #d64f00; 
+$colorE: #ff5e00; 
 $colorF: #6a34ff;
 
 * {
@@ -113,7 +113,8 @@ h2 {
 }
 
 .bi-arrow-up:hover {
-  stroke: $colorE;
+  // stroke: $colorE;
+  transform: translate(0px, -10px);
   // stroke-width: .3px;
 }
 
@@ -181,13 +182,34 @@ li a {
   z-index: 1;
 }
 
+// @keyframes example {
+//   0%   {transform: matrix3d(1, 0, 0, 0, 0, 1, 0.3, 0, 0, 0, 1, 0, 0.3, 0, 0.5, 1);}
+//   25%   {transform: matrix3d(1, 0, 0, 0, 0, 1, 0.3, 0.0053, 0, 0, 1, 0, 0, 0, 0, 1);}
+//   75%   {transform: matrix3d(1, 0, 0, 0, 0, 1, 0.3, -0.0053, 0, 0, 1, 0, 0, 0, 0, 1);}
+//   100%   {transform: matrix3d(1, 0, 0, 0, 0, 1, 0.3, 0, 0, 0, 1, 0, 0.3, 0, 0.5, 1);}
+//   // 100%  {transform: matrix3d()}
+//   // 50%  {color: blue;}
+//   // 100% {color: green;}
+// }
+
+@keyframes example {
+  // 0%   {transform: matrix3d(1, 0, 0, 0, 0, 1, 0.3, 0, 0, 0, 1, 0, 0.3, 0, 0.5, 1);}
+  // 50% {transform: matrix3d(1, 0, 0, 0, 0, 1, 0.3, 0, 0, 0, 1, 0, 0.3, 0, 0.5, 1);}
+  // 70% {transform: matrix3d(1, 0, 0.2, 0, 0, 1, 0, 0.001, 0.3, 0.5, 1, 0.3, 0.2, 6, 0, 1);}
+}
+
 .title-wrapper {
   font-size: 148px;
   // height: 148px;
   font-family: 'Helvetica', serif;
   font-weight: normal;
   transition: .2s;
+  // transform: matrix3d(1, 0, 0.2, 0, 0, 1, 0, 0.001, 0.3, 0.5, 1, 0.3, 0.2, 6, 0, 1);
+  // animation-name: example;
+  // animation: example 6s infinite;
 }
+
+
 
 .bio-wrapper {
   font-size: 28px;
@@ -196,7 +218,8 @@ li a {
   font-family: 'Helvetica', serif;
   transition: .2s;
   line-height: 1.5;
-  max-width: 1120px;
+  max-width: 981px;
+  // animation: example 6s infinite;
 }
 
 .about-section {
@@ -220,6 +243,7 @@ h1 {
   margin-block-start: 0;
   margin-block-end: 0;
   margin-left: -0.09em;
+  // animation: example 60s infinite;
 }
 
 @media (max-width: 1000px) {
@@ -279,6 +303,7 @@ h1 {
   display: flex;
   justify-content: center;
   cursor: default;
+  // transform: matrix3d(1, 0, 0, 0, 0, 1, 0.3, 0.0023, 0, 0, 1, 0, 0, 0, 0, 1);
 }
 
 @media (max-width: 1000px) {
@@ -389,6 +414,7 @@ h1 {
   object-fit: cover;
   display: flex;
   border: 6px solid white;
+  background-color: white
 }
 
 
@@ -526,7 +552,7 @@ h4, h5 {
   font-size: 22px;
   margin-bottom: 10px;
   width: 100%;
-  font-weight: normal;
+  font-weight: bold;
   white-space: pre-line;
 }
 
@@ -622,7 +648,7 @@ li {
 
 @media (min-width: 1200px) {
   .experience-dates {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -787,11 +813,13 @@ li {
   background-color: black;
   font-size: 30px;
   text-transform: uppercase;
+  transition: .2s;
 }
 
-.footer-email a:hover {
-  color: $colorF;
-}
+// .footer-email a:hover {
+//   color: $colorF;
+//   transition: .2s;
+// }
 
 .footer-email a {
   display: flex;
@@ -803,7 +831,7 @@ li {
   margin: 7px;
   display: flex;
   align-items: center;
-  border-radius: 7px;
+  // border-radius: 7px;
   height: 45px;
   border: 2px solid $colorA;
 }

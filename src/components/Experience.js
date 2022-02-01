@@ -44,9 +44,9 @@ function Experience() {
             May 2021 - Present
           </div>
           <div className="experience-info">
-            Working in Python using Mako templating, JavaScript and CSS.{'\n'}
+            Diagnosing incoming queries from the client liaison team in relation to the Artlogic CMS template product. Proposing and implementing practical, technical solutions.{'\n'}
             {'\n'}
-            Diagnosing incoming queries from the client liaison team in relation to the Artlogic CMS product and proposing and applying practical, technical solutions.{'\n'}
+            Stack includes Python using Mako templating, JavaScript and CSS.{'\n'}
             {'\n'}
           </div>
         </div>

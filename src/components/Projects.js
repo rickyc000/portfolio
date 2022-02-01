@@ -35,7 +35,7 @@ function Projects() {
           <div className="project-bio">
             Ricky’s Records is a PostgreSQL and Django REST Framework full stack application with a React front-end. Built solo over the course of a week.{'\n'}
             {'\n'}
-            Browse releases, listen to tracks across a range of genres and build up your own collection.
+            Browse releases, listen to tracks across a range of genres and build up your own collection. Inspired by sites like NTS Radio and Bandcamp.
           </div>
           <div className="project-links">
             <a

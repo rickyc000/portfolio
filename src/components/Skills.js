@@ -29,7 +29,10 @@ function Skills() {
         <li>Node.js</li>
         <li>Insomnia</li>
         <li>Table Plus</li>
+        <li>Sequel Pro</li>
         <li>Mapbox</li>
+        <li>jQuery</li>
+        <li>Pylons</li>
         <li>VS Code</li>
         <li>Trello</li>
         <li>Stripe</li>
