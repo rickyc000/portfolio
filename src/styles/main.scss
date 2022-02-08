@@ -264,7 +264,7 @@ h1 {
     font-size: 18px;
   }
   .nav-bar li {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
@@ -530,6 +530,7 @@ h1 {
 @media (max-width: 690px) {
   .experience-wrapper {
     flex-direction: column;
+    margin: 0;
   }
   .experience-image-wrapper {
     margin: 40px 0;
@@ -773,12 +774,13 @@ li {
 
 .footer {
   display: flex;
-  height: 10%;
+  // height: 10%;
   position: fixed;
   bottom: 0;
   z-index: 10;
   width: 100%;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 @media (max-width: 650px) {
@@ -811,8 +813,8 @@ li {
 .footer-email a {
   color: $colorA;
   background-color: black;
-  font-size: 30px;
-  text-transform: uppercase;
+  font-size: 20px;
+  // text-transform: uppercase;
   transition: .2s;
 }
 
@@ -827,12 +829,12 @@ li {
 }
 
 .footer-email {
-  padding: 7px;
+  padding: 6px;
   margin: 7px;
   display: flex;
   align-items: center;
   // border-radius: 7px;
-  height: 45px;
+  height: 37px;
   border: 2px solid $colorA;
 }
 
