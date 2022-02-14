@@ -101,6 +101,14 @@ function Experience() {
             Overall control of programming, promotion and design, venue hire and artist bookings.
           </div>
         </div>
+        <div className="project-links">
+          <a
+            href="https://rickys-records.herokuapp.com/"
+            target="_blank" rel="noopener noreferrer">
+            {/* <ExternalLink size={32} color={'white'} /> */}
+            Website
+          </a>
+        </div>
       </div>
 
       <div className="experience-wrapper">
