@@ -44,11 +44,21 @@ function Experience() {
             May 2021 - Present
           </div>
           <div className="experience-info">
-            Diagnosing incoming queries from the client liaison team in relation to the Artlogic CMS template product. Proposing and implementing practical, technical solutions.{'\n'}
+            Implementing practical, technical solutions for a range of gallery and artist websites built by Artlogic. Diagnosing incoming queries from the client liaison team in relation to bespoke and template website products, and the Artlogic CMS platform.{'\n'}
             {'\n'}
-            Stack includes Python using Mako templating, JavaScript and CSS.{'\n'}
+            Stack includes Python using Mako templating, MySQL and jQuery.{'\n'}
             {'\n'}
+            Selected clients:
           </div>
+          <ul className="clients-list">
+            <li>Simon Lee Gallery</li>
+            <li>Alan Klinkoff Gallery</li>
+            <li>Royal Scottish Academy</li>
+            <li>Sadie Coles</li>
+            <li>Hales Gallery</li>
+            <li>Marian Goodman Gallery</li>
+            <li>Michael Hoppen Gallery</li>
+          </ul>
         </div>
       </div>
 
@@ -101,14 +111,7 @@ function Experience() {
             Overall control of programming, promotion and design, venue hire and artist bookings.
           </div>
         </div>
-        <div className="project-links">
-          <a
-            href="https://rickys-records.herokuapp.com/"
-            target="_blank" rel="noopener noreferrer">
-            {/* <ExternalLink size={32} color={'white'} /> */}
-            Website
-          </a>
-        </div>
+        
       </div>
 
       <div className="experience-wrapper">
