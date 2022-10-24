@@ -41,7 +41,7 @@ function Experience() {
             Web Developer - Client Support {'\n'}
           </h5>
           <div className="experience-dates">
-            May 2021 - Present
+            May 2021 - April 2022
           </div>
           <div className="experience-info">
             Implementing practical, technical solutions for a range of gallery and artist websites built by Artlogic. Diagnosing incoming queries from the client liaison team in relation to bespoke and template website products, and the Artlogic CMS platform.{'\n'}
@@ -103,7 +103,7 @@ function Experience() {
             Founder
           </h5>
           <div className="experience-dates">
-            Aug 2018 - present
+            Aug 2018 - Oct 2019
           </div>
           <div className="experience-info">
             London-based collective and event-series showcasing emerging DJs playing forward-thinking music across a range of genres. Events have featured artists Stem, Simkin, Truska and Taslo Valve amongst others.{'\n'}

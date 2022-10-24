@@ -6,6 +6,7 @@ import sixtenSteps from '../assets/projects/16.Steps-comp.png'
 import tetris from '../assets/projects/tetris-gameplay-crop.png'
 import cityspace from '../assets/projects/cityspace-landing-crop.png'
 // import gorillazapp from '../assets/projects/gorillazapp-track-crop.png'
+import eazzze from '../assets/projects/eazzze-screenshot-comp.png'
 
 // import ExternalLink from '../assets/icons/ExtLinkIcon.js'
 // import GitHubIcon from '../assets/icons/GitHubIcon.js'
@@ -189,6 +190,46 @@ function Projects() {
           </div>
         </div>
       </div>
+
+      <div className="rickys-records-wrapper project-wrapper">
+        <div className="project-image-wrapper">
+          <a
+            href="https://eazzze.net/"
+            target="_blank" rel="noopener noreferrer">
+            <img
+              src={eazzze}
+              alt="eazzze"
+              className="project-image"
+            />
+          </a>
+        </div>
+        <div className="project-bio-wrapper">
+          <div className="project-title">
+            eazzze.net
+          </div>
+          <div className="project-bio">
+            Artist website with embedded Soundcloud content for hosting DJ mixes.{'\n'}
+            {'\n'}
+            Built using React.
+          </div>
+          <div className="project-links">
+            <a
+              href="https://eazzze.net/"
+              target="_blank" rel="noopener noreferrer">
+              {/* <ExternalLink size={32} color={'white'} /> */}
+              Website
+            </a>
+            <a
+              href="https://github.com/rickyc000/eazzze_site"
+              target="_blank" rel="noopener noreferrer">
+              {/* <GitHubIcon size={32} color={'white'} /> */}
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+
     </div>
 
   )

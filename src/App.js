@@ -41,6 +41,7 @@ function App() {
   const artlogicURL = 'https://artlogic.net/'
   const hiyaURL = 'https://www.instagram.com/__hiy.a/'
   const linkedInURL = 'https://www.linkedin.com/in/ricky-cato/'
+  const mynkURL = 'https://www.instagram.com/mynkmynkmynk/'
 
   const changeBackground = () => {
     window.scrollY >= 300 ? setTitle(true) : setTitle(false)
@@ -95,7 +96,7 @@ function App() {
                 Ricky Cato
               </h1>
               <h2 className={title ? 'bio-wrapper title-active' : 'bio-wrapper'}>
-                is a <b><i>Web Developer</i></b> based in London. He studied Creative Music Technology at The University of Surrey, then worked at <a href={bleepURL} target="_blank" rel="noopener noreferrer" className="bio-link">Bleep</a> and <a href={ochreURL} target="_blank" rel="noopener noreferrer" className="bio-link"> Ochre</a>, for clients such as Boiler Room, Warp Records and NTS Radio, before learning to code at <a href={generalAssemblyURL} target="_blank" rel="noopener noreferrer" className="bio-link">General Assembly</a>. Ricky runs/DJs at a club night called <a href={hiyaURL} target="_blank" rel="noopener noreferrer" className="bio-link">Hiya</a> and currently works on websites for artists and galleries at <a href={artlogicURL} target="_blank" rel="noopener noreferrer" className="bio-link"> Artlogic</a>. Contact him at <a href="mailto:r.cato@live.com" target="_blank" rel="noopener noreferrer" className="bio-link">r.cato@live.com</a> or via <a href={linkedInURL} target="_blank" rel="noopener noreferrer" className="bio-link">LinkedIn</a>.
+                is a <b><i>Web Developer</i></b> based in London. He studied Creative Music Technology at The University of Surrey, then worked at <a href={bleepURL} target="_blank" rel="noopener noreferrer" className="bio-link">Bleep</a> and <a href={ochreURL} target="_blank" rel="noopener noreferrer" className="bio-link"> Ochre</a>, for clients such as Boiler Room, Warp Records and NTS Radio, before learning to code at <a href={generalAssemblyURL} target="_blank" rel="noopener noreferrer" className="bio-link">General Assembly</a>. Ricky ran a club night called <a href={hiyaURL} target="_blank" rel="noopener noreferrer" className="bio-link">Hiya</a>, plays drums in <a href={mynkURL} target="_blank" rel="noopener noreferrer" className="bio-link">Mynk</a>, and most recently worked on websites for artists and galleries at <a href={artlogicURL} target="_blank" rel="noopener noreferrer" className="bio-link"> Artlogic</a>. Contact him at <a href="mailto:r.cato@live.com" target="_blank" rel="noopener noreferrer" className="bio-link">r.cato@live.com</a> or via <a href={linkedInURL} target="_blank" rel="noopener noreferrer" className="bio-link">LinkedIn</a>.
               </h2>
             </div>
             <div className="scroll-down-wrapper" data-scroll data-scroll-sticky>
