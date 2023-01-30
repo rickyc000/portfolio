@@ -12,6 +12,8 @@ function Skills() {
         <li>React.js</li>
         <li>Sass</li>
         <li>Yarn</li>
+        <li>Three.js</li>
+        <li>TypeScript</li>
         <li>Mako</li>
         <li>NPM</li>
         <li>React Semantic UI</li>

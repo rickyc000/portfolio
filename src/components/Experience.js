@@ -11,6 +11,7 @@ import generalAssembly from '../assets/experience/ga.png'
 import surreyUni from '../assets/experience/university-of-surrey-2.png'
 import hiya from '../assets/experience/hiya.png'
 import artlogic from '../assets/experience/artlogic.png'
+import rickycato from '../assets/experience/RickyCato_Athelas_font-min.png'
 
 function Experience() {
 
@@ -25,6 +26,31 @@ function Experience() {
           I thrive when collaborating on forward-thinking and innovative projects with a passionate team of people and look forward to my career as a developer.
         </div>
       </div> */}
+
+      <div className="experience-wrapper">
+        <div className="experience-image-wrapper">
+          <a href="https://artlogic.net/" target="_blank" rel="noopener noreferrer">
+            <img
+              src={rickycato}
+              alt="Ricky Cato"
+              className="experience-image"
+            />
+          </a>
+        </div>
+        <div className="experience-content-wrapper">
+          <h5 className="experience-role">
+            Freelance Web Developer {'\n'}
+          </h5>
+          <div className="experience-dates">
+            Dec 2021 - Present
+          </div>
+          <div className="experience-info">
+            Design and frontend development project for a commercial client using Figma to prototype and React to build.{'\n'}
+            {'\n'}
+            Assisting client with third-party marketing tools such as MailChimp.
+          </div>
+        </div>
+      </div>
 
       <div className="experience-wrapper">
         <div className="experience-image-wrapper">
@@ -111,7 +137,7 @@ function Experience() {
             Overall control of programming, promotion and design, venue hire and artist bookings.
           </div>
         </div>
-        
+
       </div>
 
       <div className="experience-wrapper">
