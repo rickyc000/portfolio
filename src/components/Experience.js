@@ -47,7 +47,7 @@ function Experience() {
           <div className="experience-info">
             Design and frontend development project for a commercial client using Figma to prototype and React to build.{'\n'}
             {'\n'}
-            Assisting client with third-party marketing tools such as MailChimp.
+            Assisting client with third-party marketing tools such as Mailchimp.
           </div>
         </div>
       </div>
