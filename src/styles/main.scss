@@ -433,10 +433,14 @@ h1 {
 .tags-wrapper {
   display: flex;
   margin: 14px 0;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
-.project-tag {
+.project-tag,
+.experience-tag {
   margin-right: 7px;
+  margin-bottom: 4px;
   border-radius: 6px;
   color: white;
   width: min-content;
@@ -446,6 +450,11 @@ h1 {
   border-width: 1px;
   border-color: white;
   white-space: nowrap;
+}
+
+.experience-tag {
+  color: black;
+  border-color: black;
 }
 
 
@@ -668,6 +677,9 @@ li {
 @media (max-width: 690px) {
   .experience-info {
     font-size: 12px;
+  }
+  .project-tag, .experience-tag {
+    font-size: 10px;
   }
 }
 

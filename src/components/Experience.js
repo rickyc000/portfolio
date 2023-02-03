@@ -48,6 +48,10 @@ function Experience() {
             Design and frontend development project for a commercial client using Figma to prototype and React to build.{'\n'}
             {'\n'}
             Assisting client with third-party marketing tools such as Mailchimp.
+            <div className='tags-wrapper'>
+              <div className='experience-tag'>React</div>
+              <div className='experience-tag'>Figma</div>
+            </div>
           </div>
         </div>
       </div>
@@ -85,6 +89,13 @@ function Experience() {
             <li>Marian Goodman Gallery</li>
             <li>Michael Hoppen Gallery</li>
           </ul>
+          <div className='tags-wrapper'>
+            <div className='experience-tag'>Python</div>
+            <div className='experience-tag'>MySQL</div>
+            <div className='experience-tag'>JavaScript</div>
+            <div className='experience-tag'>jQuery</div>
+            <div className='experience-tag'>Pylons</div>
+          </div>
         </div>
       </div>
 
@@ -112,6 +123,15 @@ function Experience() {
             {'\n'}
             Produced 4 projects, both independently and as part of a group, developing project management skills in an agile environment.
           </div>
+          <div className='tags-wrapper'>
+            <div className='experience-tag'>JavaScript</div>
+            <div className='experience-tag'>React</div>
+            <div className='experience-tag'>Python</div>
+            <div className='experience-tag'>MongoDB</div>
+            <div className='experience-tag'>Django</div>
+            <div className='experience-tag'>PostgreSQL</div>
+            <div className='experience-tag'>CSS</div>
+          </div>
         </div>
       </div>
 
@@ -135,6 +155,9 @@ function Experience() {
             London-based collective and event-series showcasing emerging DJs playing forward-thinking music across a range of genres. Events have featured artists Stem, Simkin, Truska and Taslo Valve amongst others.{'\n'}
             {'\n'}
             Overall control of programming, promotion and design, venue hire and artist bookings.
+          </div>
+          <div className='tags-wrapper'>
+            <div className='experience-tag'>Adobe Photoshop</div>
           </div>
         </div>
 
@@ -180,6 +203,12 @@ function Experience() {
             <li>Because Music</li>
             <li>Partisan Records</li>
           </ul>
+          <div className='tags-wrapper'>
+            <div className='experience-tag'>Excel</div>
+            <div className='experience-tag'>Mailchimp</div>
+            <div className='experience-tag'>MySQL</div>
+            <div className='experience-tag'>CSS</div>
+          </div>
         </div>
       </div>
 
@@ -203,6 +232,10 @@ function Experience() {
           <div className="experience-info">
             Digital asset management, assisting in the sale of physical and digital products on Bleep.com. Produced and edited visual and audio marketing content and handled customer support.
           </div>
+          <div className='tags-wrapper'>
+            <div className='experience-tag'>Excel</div>
+            <div className='experience-tag'>Adobe Photoshop</div>
+          </div>
         </div>
       </div>
 
@@ -223,6 +256,11 @@ function Experience() {
           </div>
           <div className="experience-info">
             Modules included visual programming languages such as Max/MSP and Reaktor, as well as Sound Design, Synthesis & Sampling and Composition Technologies.
+          </div>
+          <div className='tags-wrapper'>
+            <div className='experience-tag'>Logic Pro X</div>
+            <div className='experience-tag'>Max/MSP</div>
+            <div className='experience-tag'>Reaktor</div>
           </div>
         </div>
       </div>
