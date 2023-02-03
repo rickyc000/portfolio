@@ -831,6 +831,7 @@ li {
   width: 100%;
   justify-content: space-between;
   align-items: flex-end;
+  pointer-events: none;
 }
 
 @media (max-width: 650px) {
@@ -866,6 +867,7 @@ li {
   font-size: 20px;
   // text-transform: uppercase;
   transition: .2s;
+  pointer-events: auto;
 }
 
 // .footer-email a:hover {
@@ -895,6 +897,7 @@ li {
 .back-to-top {
   margin: 8px;
   cursor: pointer;
+  pointer-events: auto;
 }
 
 
