@@ -145,7 +145,6 @@ function App() {
               <Link
                 key="about"
                 activeClass="active"
-                className="about"
                 to="about"
                 spy={true}
                 smooth={true}

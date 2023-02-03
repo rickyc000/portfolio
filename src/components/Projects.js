@@ -18,7 +18,7 @@ function Projects() {
   return (
 
     <div className="projects-content-wrapper">
-      <div className="rickys-records-wrapper project-wrapper">
+      <div className="project-wrapper">
         <div className="project-image-wrapper">
           <a
             href="https://rickys-records.herokuapp.com/"
@@ -38,6 +38,12 @@ function Projects() {
             Ricky’s Records is a PostgreSQL and Django REST Framework full stack application with a React front-end. Built solo over the course of a week.{'\n'}
             {'\n'}
             Browse releases, listen to tracks across a range of genres and build up your own collection. Inspired by sites like NTS Radio and Bandcamp.
+          </div>
+          <div className='tags-wrapper'>
+            <div className='project-tag'>React</div>
+            <div className='project-tag'>Python</div>
+            <div className='project-tag'>Django</div>
+            <div className='project-tag'>PostgreSQL</div>
           </div>
           <div className="project-links">
             <a
@@ -77,6 +83,10 @@ function Projects() {
             {'\n'}
             16.Steps was a solo project built after completing General Assembly’s Software Engineering Immersive course.
           </div>
+          <div className='tags-wrapper'>
+            <div className='project-tag'>JavaScript</div>
+            <div className='project-tag'>Web Audio API</div>
+          </div>
           <div className="project-links">
             <a
               href="https://rickyc000.github.io/16.Steps/"
@@ -95,7 +105,7 @@ function Projects() {
       </div>
 
 
-      <div className="cityspace-wrapper project-wrapper">
+      <div className="project-wrapper">
         <div className="project-image-wrapper">
           <a href="https://cityspace-app.herokuapp.com" target="_blank" rel="noopener noreferrer">
             <img
@@ -113,6 +123,12 @@ function Projects() {
             A full-stack MERN application built as part of a 4-person group project over 9 days.{'\n'}
             {'\n'}
             CitySpace is platform for discovering and sharing the best spots in London. Register and login to build-up a list of your favourite locations, add comments and add/edit your own spaces.
+          </div>
+          <div className='tags-wrapper'>
+            <div className='project-tag'>MongoDB</div>
+            <div className='project-tag'>Express</div>
+            <div className='project-tag'>React</div>
+            <div className='project-tag'>Node</div>
           </div>
           <div className="project-links">
             <a href="https://cityspace-app.herokuapp.com" target="_blank" rel="noopener noreferrer">
@@ -154,7 +170,7 @@ function Projects() {
         </div>
       </div> */}
 
-      <div className="tetris-wrapper project-wrapper">
+      <div className="project-wrapper">
         <div className="project-image-wrapper">
           <a
             href="https://rickyc000.github.io/sei-project-1"
@@ -175,6 +191,11 @@ function Projects() {
             {'\n'}
             My first solo project, the game utilises JavaScript fundamentals such as loops, array methods and conditional statements.
           </div>
+          <div className='tags-wrapper'>
+            <div className='project-tag'>HTML</div>
+            <div className='project-tag'>CSS</div>
+            <div className='project-tag'>JavaScript</div>
+          </div>
           <div className="project-links">
             <a
               href="https://rickyc000.github.io/sei-project-1"
@@ -192,7 +213,7 @@ function Projects() {
         </div>
       </div>
 
-      <div className="rickys-records-wrapper project-wrapper">
+      <div className="project-wrapper">
         <div className="project-image-wrapper">
           <a
             href="https://eazzze.net/"
@@ -212,6 +233,10 @@ function Projects() {
             Artist website with embedded Soundcloud content for hosting DJ mixes.{'\n'}
             {'\n'}
             Built using React.
+          </div>
+          <div className='tags-wrapper'>
+            <div className='project-tag'>React</div>
+            <div className='project-tag'>Sass</div>
           </div>
           <div className="project-links">
             <a
