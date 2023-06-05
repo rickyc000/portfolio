@@ -42,7 +42,7 @@ function Experience() {
             Freelance Web Developer {'\n'}
           </h5>
           <div className="experience-dates">
-            Dec 2021 - Present
+            Feb 2023 - Present
           </div>
           <div className="experience-info">
             Design and frontend development project for a commercial client using Figma to prototype and React to build.{'\n'}
